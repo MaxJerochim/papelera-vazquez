@@ -1,0 +1,48 @@
+:root{
+
+    /* ===== COLORS ===== */
+
+    --primary:#1565FF;
+    --primary-light:#4A8DFF;
+
+    --secondary:#081420;
+
+    --accent:#27B1FF;
+
+    --white:#FFFFFF;
+
+    --light:#F5F8FC;
+
+    --gray:#8C98A8;
+
+    --text:#1B2430;
+
+    /* ===== SPACING ===== */
+
+    --section-padding:120px;
+
+    --container-width:1300px;
+
+    /* ===== BORDER ===== */
+
+    --radius-sm:10px;
+
+    --radius-md:18px;
+
+    --radius-lg:30px;
+
+    --radius-xl:60px;
+
+    /* ===== SHADOW ===== */
+
+    --shadow-sm:0 5px 20px rgba(0,0,0,.06);
+
+    --shadow-md:0 15px 45px rgba(0,0,0,.08);
+
+    --shadow-lg:0 30px 80px rgba(0,0,0,.12);
+
+    /* ===== TRANSITIONS ===== */
+
+    --transition:.35s ease;
+
+}

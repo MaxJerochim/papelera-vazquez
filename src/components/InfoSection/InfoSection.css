@@ -1,0 +1,691 @@
+/* ===================================================== */
+/* INFO SECTION */
+/* ===================================================== */
+
+.info-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fbff 100%
+    );
+
+}
+
+
+/* ===================================================== */
+/* BACKGROUND */
+/* ===================================================== */
+
+.info-background{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+
+/* Grid */
+
+.grid-pattern{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(21,101,255,.035) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(21,101,255,.035) 1px, transparent 1px);
+
+    background-size:70px 70px;
+
+    mask-image:
+        radial-gradient(circle, white 30%, transparent 95%);
+
+}
+
+
+/* Glows */
+
+.info-glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.20;
+
+}
+
+
+.glow-left{
+
+    width:500px;
+
+    height:500px;
+
+    background:#1565ff;
+
+    top:-150px;
+
+    left:-200px;
+
+}
+
+
+.glow-right{
+
+    width:420px;
+
+    height:420px;
+
+    background:#27b1ff;
+
+    right:-120px;
+
+    bottom:-120px;
+
+}
+
+
+/* ===================================================== */
+/* CONTAINER */
+/* ===================================================== */
+
+.info-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:90px;
+
+}
+
+
+.info-content.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+
+/* ===================================================== */
+/* IMAGE */
+/* ===================================================== */
+
+.info-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.image-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:560px;
+
+    border-radius:38px;
+
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.14);
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease;
+
+}
+
+
+.image-wrapper:hover{
+
+    transform:
+
+        translateY(-10px)
+        rotate(-1deg);
+
+    box-shadow:
+
+        0 45px 90px rgba(21,101,255,.20);
+
+}
+
+
+.image-wrapper img{
+
+    width:100%;
+
+    height:720px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+/* Luz superior */
+
+.image-gradient{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            rgba(255,255,255,.18),
+
+            transparent 35%,
+
+            transparent 70%,
+
+            rgba(8,20,32,.12)
+
+        );
+
+}
+
+
+/* Brillo animado */
+
+.image-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-60%;
+
+    width:50%;
+
+    height:250%;
+
+    transform:rotate(25deg);
+
+    background:
+
+        linear-gradient(
+
+            to right,
+
+            transparent,
+
+            rgba(255,255,255,.35),
+
+            transparent
+
+        );
+
+    transition:1s;
+
+}
+
+
+.image-wrapper:hover::after{
+
+    left:140%;
+
+}
+
+
+/* ===================================================== */
+/* TEXT */
+/* ===================================================== */
+
+.info-text{
+
+    flex:1;
+
+}
+
+
+.info-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#1565ff;
+
+    font-size:.92rem;
+
+    font-weight:700;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.06);
+
+}
+
+
+.info-tag span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#27b1ff;
+
+}
+
+
+.info-text h2{
+
+    margin-top:28px;
+
+    font-size:clamp(3rem,5vw,4.4rem);
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+    color:#081420;
+
+}
+
+
+.paragraphs{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+.paragraphs p{
+
+    max-width:620px;
+
+    color:#667085;
+
+    font-size:1.12rem;
+
+    line-height:2;
+
+}
+
+/* ===================================================== */
+/* STATS */
+/* ===================================================== */
+
+.stats-container{
+
+    margin-top:55px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+
+.stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(21,101,255,.08),
+            transparent 60%
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+
+.stat-card:hover{
+
+    transform:
+
+        translateY(-10px);
+
+    box-shadow:
+
+        0 30px 60px rgba(21,101,255,.16);
+
+    border-color:rgba(21,101,255,.18);
+
+}
+
+
+.stat-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+.stat-card h3{
+
+    font-size:2.5rem;
+
+    font-weight:800;
+
+    color:#1565ff;
+
+    letter-spacing:-1px;
+
+}
+
+
+.stat-card p{
+
+    margin-top:12px;
+
+    color:#667085;
+
+    line-height:1.6;
+
+    font-weight:600;
+
+}
+
+
+/* ===================================================== */
+/* ANIMACIONES */
+/* ===================================================== */
+
+.info-image{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+.info-content.reverse .info-image{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+.info-text{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+.info-content.reverse .info-text{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+
+/* ===================================================== */
+/* DECORACIÓN */
+/* ===================================================== */
+
+.info-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:160px;
+
+    height:4px;
+
+    border-radius:999px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #1565ff,
+            #27b1ff
+        );
+
+    opacity:.8;
+
+}
+
+
+.info-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-180px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:700px;
+
+    height:350px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(39,177,255,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+
+}
+
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+@media(max-width:1100px){
+
+.info-content{
+
+    gap:60px;
+
+}
+
+.stats-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.image-wrapper img{
+
+    height:560px;
+
+}
+
+}
+
+
+@media(max-width:900px){
+
+.info-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.info-content.reverse{
+
+    flex-direction:column;
+
+}
+
+.paragraphs{
+
+    align-items:center;
+
+}
+
+.paragraphs p{
+
+    max-width:100%;
+
+}
+
+.stats-container{
+
+    width:100%;
+
+    grid-template-columns:1fr;
+
+}
+
+.image-wrapper{
+
+    max-width:100%;
+
+}
+
+.image-wrapper img{
+
+    height:460px;
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.info-text h2{
+
+    font-size:2.5rem;
+
+}
+
+.info-tag{
+
+    font-size:.8rem;
+
+}
+
+.paragraphs p{
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+.stat-card{
+
+    padding:24px;
+
+}
+
+.stat-card h3{
+
+    font-size:2rem;
+
+}
+
+}

@@ -1,0 +1,22 @@
+export const products_b = [
+  { id: 21, image: "/images/REDES GFIBRAS2026/21.webp", description: "" },
+  { id: 22, image: "/images/REDES GFIBRAS2026/22.webp", description: "" },
+  { id: 23, image: "/images/REDES GFIBRAS2026/23.webp", description: "" },
+  { id: 24, image: "/images/REDES GFIBRAS2026/24.webp", description: "" },
+  { id: 25, image: "/images/REDES GFIBRAS2026/25.webp", description: "" },
+  { id: 26, image: "/images/REDES GFIBRAS2026/84.webp", description: "" },
+  { id: 27, image: "/images/REDES GFIBRAS2026/85.webp", description: "" },
+  { id: 28, image: "/images/REDES GFIBRAS2026/86.webp", description: "" },
+  { id: 29, image: "/images/REDES GFIBRAS2026/87.webp", description: "" },
+  { id: 30, image: "/images/REDES GFIBRAS2026/88.webp", description: "" },
+  { id: 31, image: "/images/REDES GFIBRAS2026/89.webp", description: "" },
+  { id: 32, image: "/images/REDES GFIBRAS2026/90.webp", description: "" },
+  { id: 33, image: "/images/REDES GFIBRAS2026/91.webp", description: "" },
+  { id: 34, image: "/images/REDES GFIBRAS2026/92.webp", description: "" },
+  { id: 35, image: "/images/REDES GFIBRAS2026/93.webp", description: "" },
+  { id: 36, image: "/images/REDES GFIBRAS2026/94.webp", description: "" },
+  { id: 37, image: "/images/REDES GFIBRAS2026/95.webp", description: "" },
+  { id: 38, image: "/images/REDES GFIBRAS2026/38.webp", description: "" },
+  { id: 39, image: "/images/REDES GFIBRAS2026/39.webp", description: "" },
+  { id: 40, image: "/images/REDES GFIBRAS2026/100.webp", description: "" }
+];

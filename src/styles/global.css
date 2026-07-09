@@ -1,0 +1,81 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+    scroll-padding-top: 120px;
+
+}
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    background:var(--white);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:var(--section-padding) 8%;
+    scroll-margin-top: 120px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:var(--container-width);
+
+    margin:auto;
+
+}

@@ -1,0 +1,22 @@
+.gallery{
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f7faff 100%
+    );
+
+}
+
+.gallery-container{
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
