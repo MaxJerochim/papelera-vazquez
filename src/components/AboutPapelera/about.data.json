@@ -1,0 +1,18 @@
+{
+    "eyebrow": "Nosotros",
+    "heading": "Líderes en la recuperación responsable de papel y cartón.",
+    "paragraphs": [
+        "Somos una empresa dedicada a la gestión integral de materiales reciclables, especializada en la recolección, clasificación y acondicionamiento de papel y cartón para empresas de todos los tamaños.",
+        "Contamos con personal capacitado en cada etapa del proceso: desde la colocación de canastos y contenedores en planta, hasta la recolección, compactación, pesaje y disposición final de los materiales.",
+        "Trabajamos junto a nuestros clientes para diseñar soluciones a medida, optimizando la logística y contribuyendo activamente al desarrollo de una economía circular más eficiente."
+    ],
+    "image": {
+        "src": "/images/REDES GFIBRAS2026/47.webp",
+        "alt": "Planta de recuperación de papel y cartón"
+    },
+    "stats": [
+        { "value": "+40", "label": "Años en la industria papelera" },
+        { "value": "1.200 T", "label": "Material recuperado por mes" },
+        { "value": "98%", "label": "Reincorporado al circuito productivo" }
+    ]
+}

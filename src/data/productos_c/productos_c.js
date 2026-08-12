@@ -1,4 +1,4 @@
-export const products_c = [
+const products_c = [
   { id: 41, image: "/images/REDES GFIBRAS2026/42.webp", description: "" },
   { id: 42, image: "/images/REDES GFIBRAS2026/43.webp", description: "" },
   { id: 43, image: "/images/REDES GFIBRAS2026/44.webp", description: "" },
@@ -11,3 +11,5 @@ export const products_c = [
   { id: 50, image: "/images/REDES GFIBRAS2026/51.webp", description: "" },
   { id: 51, image: "/images/REDES GFIBRAS2026/52.webp", description: "" }
 ];
+
+export default products_c;

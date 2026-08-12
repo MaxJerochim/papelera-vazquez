@@ -1,0 +1,23 @@
+{
+    "eyebrow": "NOSOTROS",
+    "title": "Líderes en la recuperación responsable de papel y cartón, promoviendo el cuidado del medioambiente.",
+    "paragraphs": [
+        "Somos un grupo de empresas con más de 60 años de trayectoria, dedicado a satisfacer las demandas del área de gestión de residuos de papel y cartón. Nos encargamos del proceso integral en su totalidad: recolección, clasificación y acondicionamiento.",
+        "Estamos habilitados para operar con todas las categorías de material sometidas a control, brindando soluciones a imprentas, gráficas, fábricas de corrugado, fundaciones, grandes depósitos y consumidores.",
+        "A nivel nacional contamos con la flota y el equipamiento necesario para operar con agilidad, lo que nos permite brindar soluciones a nuestros clientes en el corto plazo."
+    ],
+    "image": {
+        "src": "/images/REDES GFIBRAS2026/23.webp",
+        "alt": "Grupo Fibras - Historia y trayectoria"
+    },
+    "stats": [
+        { "value": "+60", "label": "AÑOS DE TRAYECTORIA" },
+        { "value": "+15", "label": "FAMILIAS TRABAJANDO CON NOSOTROS" },
+        { "value": "3ra GEN.", "label": "DE UNA FAMILIA DE PAPELEROS" }
+    ],
+    "featuredCard": {
+        "image": "/images/REDES GFIBRAS2026/61.webp",
+        "title": "GRUPO FIBRAS — MÁS DE 60 AÑOS DE HISTORIA",
+        "description": "Este proyecto comenzó con nuestro abuelo, con una sola camioneta y muchas ganas de trabajar, cuando todo se hacía a mano. Hoy somos la tercera generación de una familia de papeleros, comprometida con darle una nueva vida útil al material y colaborar con el medio ambiente."
+    }
+}

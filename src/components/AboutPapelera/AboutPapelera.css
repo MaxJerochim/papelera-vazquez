@@ -1,0 +1,841 @@
+/* =========================================================
+   ABOUT PAPELERA
+========================================================= */
+
+.about-papelera {
+    width: 100%;
+
+    padding: 120px 8% 130px;
+
+    background:
+        radial-gradient(
+            circle at 8% 8%,
+            rgba(0, 174, 255, 0.22),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(21, 101, 255, 0.20),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 45% 58%,
+            rgba(0, 191, 255, 0.16),
+            transparent 36%
+        ),
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(21, 101, 255, 0.20),
+            transparent 32%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #eaf8ff 18%,
+            #cceeff 42%,
+            #a9dcff 66%,
+            #72bdff 84%,
+            #4b9ff5 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORACIÓN SUPERIOR
+========================================================= */
+
+.about-papelera::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #075ee8,
+            #00cfff,
+            #7edfff,
+            #1565ff
+        );
+}
+
+
+/* =========================================================
+   DECORACIÓN GRANDE SUPERIOR
+========================================================= */
+
+.about-papelera::after {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    top: -350px;
+    right: -250px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 157, 255, 0.25),
+            rgba(0, 207, 255, 0.12) 40%,
+            transparent 72%
+        );
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.about-inner {
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.about-top {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.about-text {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.about-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #006ee6;
+
+    font-weight: 700;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.about-eyebrow span {
+    width: 28px;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006ee6,
+            #00cfff
+        );
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.about-text h2 {
+    margin: 18px 0 0;
+
+    max-width: 650px;
+
+    font-size:
+        clamp(
+            2rem,
+            3.4vw,
+            2.9rem
+        );
+
+    line-height: 1.18;
+
+    letter-spacing: -1px;
+
+    color: #061827;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.about-image {
+    margin-top: 35px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(0, 110, 230, 0.20);
+
+    box-shadow:
+        0 25px 55px
+        rgba(0, 74, 140, 0.18),
+        0 8px 22px
+        rgba(0, 150, 255, 0.10);
+
+    position: relative;
+}
+
+.about-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 174, 255, 0.10),
+            transparent 45%,
+            rgba(21, 101, 255, 0.08)
+        );
+
+    pointer-events: none;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 340px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PÁRRAFOS / BLOQUES
+========================================================= */
+
+.about-paragraphs {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding-top: 35px;
+}
+
+
+/* =========================================================
+   TARJETAS DE TEXTO
+========================================================= */
+
+.about-paragraphs p {
+    position: relative;
+
+    margin: 0;
+
+    padding:
+        23px
+        25px
+        23px
+        29px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(239, 250, 255, 0.92)
+        );
+
+    border:
+        1px solid
+        rgba(0, 112, 230, 0.12);
+
+    border-radius: 14px;
+
+    color: #405d73;
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+
+    box-shadow:
+        0 12px 32px
+        rgba(0, 74, 140, 0.10),
+        0 4px 12px
+        rgba(0, 150, 255, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   LÍNEA AZUL LATERAL
+========================================================= */
+
+.about-paragraphs p::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+
+    width: 4px;
+
+    border-radius:
+        0
+        5px
+        5px
+        0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #006ee6,
+            #00cfff
+        );
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.about-paragraphs p:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(0, 126, 235, 0.24);
+
+    box-shadow:
+        0 17px 38px
+        rgba(0, 74, 140, 0.13),
+        0 6px 18px
+        rgba(0, 145, 255, 0.09);
+}
+
+
+/* =========================================================
+   PRIMER PÁRRAFO DESTACADO
+========================================================= */
+
+.about-paragraphs p:first-child {
+    color: #061827;
+
+    font-weight: 600;
+
+    font-size: 1.05rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eaf8ff
+        );
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.about-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+
+    margin-top: 80px;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.about-stat-card {
+    padding: 32px 30px;
+
+    min-height: 150px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #06245a 0%,
+            #075ed6 48%,
+            #00aeea 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(120, 225, 255, 0.25);
+
+    box-shadow:
+        0 18px 40px
+        rgba(0, 65, 135, 0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-stat-card:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 24px 48px
+        rgba(0, 65, 135, 0.28);
+}
+
+
+/* =========================================================
+   CÍRCULO DECORATIVO
+========================================================= */
+
+.about-stat-card::after {
+    content: "";
+
+    position: absolute;
+
+    right: -30px;
+    bottom: -30px;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 224, 255, 0.25),
+            rgba(255, 255, 255, 0.04) 60%,
+            transparent 72%
+        );
+}
+
+
+/* =========================================================
+   SEGUNDO CÍRCULO
+========================================================= */
+
+.about-stat-card::before {
+    content: "";
+
+    position: absolute;
+
+    right: 25px;
+    top: -45px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================================
+   STAT TEXT
+========================================================= */
+
+.about-stat-card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    font-size: 2.4rem;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    letter-spacing: -1px;
+}
+
+.about-stat-card p {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 10px 0 0;
+
+    color: #c9efff;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-papelera {
+        padding:
+            100px
+            6%
+            110px;
+    }
+
+    .about-top {
+        grid-template-columns:
+            1fr;
+
+        gap: 45px;
+    }
+
+    .about-text h2 {
+        max-width: 800px;
+    }
+
+    .about-image {
+        margin-top: 30px;
+    }
+
+    .about-image img {
+        height: 400px;
+    }
+
+    .about-paragraphs {
+        padding-top: 0;
+    }
+
+    .about-stats {
+        margin-top: 65px;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 18px;
+    }
+
+    .about-stat-card {
+        padding:
+            28px
+            23px;
+    }
+
+    .about-stat-card h3 {
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================================
+   TABLET PEQUEÑO
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .about-papelera {
+        padding:
+            85px
+            6%
+            90px;
+    }
+
+    .about-image img {
+        height: 340px;
+    }
+
+    .about-stats {
+        grid-template-columns:
+            1fr;
+
+        gap: 16px;
+    }
+
+    .about-stat-card {
+        min-height: auto;
+
+        padding:
+            27px
+            25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-papelera {
+        padding:
+            70px
+            5%
+            80px;
+    }
+
+
+    /* =========================
+       TOP
+    ========================= */
+
+    .about-top {
+        gap: 30px;
+    }
+
+
+    /* =========================
+       EYEBROW
+    ========================= */
+
+    .about-eyebrow {
+        font-size: 0.78rem;
+
+        letter-spacing: 1.3px;
+    }
+
+    .about-eyebrow span {
+        width: 22px;
+    }
+
+
+    /* =========================
+       HEADING
+    ========================= */
+
+    .about-text h2 {
+        margin-top: 14px;
+
+        font-size:
+            clamp(
+                1.8rem,
+                8vw,
+                2.25rem
+            );
+
+        line-height: 1.2;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    /* =========================
+       IMAGE
+    ========================= */
+
+    .about-image {
+        margin-top: 25px;
+
+        border-radius: 18px;
+
+        box-shadow:
+            0 20px 40px
+            rgba(0, 74, 140, 0.15),
+            0 5px 15px
+            rgba(0, 145, 255, 0.08);
+    }
+
+    .about-image img {
+        height: 260px;
+    }
+
+
+    /* =========================
+       BLOQUES DE TEXTO
+    ========================= */
+
+    .about-paragraphs {
+        gap: 14px;
+
+        padding-top: 0;
+    }
+
+    .about-paragraphs p {
+        padding:
+            20px
+            18px
+            20px
+            23px;
+
+        border-radius: 13px;
+
+        font-size: 0.92rem;
+
+        line-height: 1.7;
+    }
+
+    .about-paragraphs p:first-child {
+        font-size: 0.96rem;
+    }
+
+    .about-paragraphs p::before {
+        top: 15px;
+        bottom: 15px;
+
+        width: 3px;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .about-stats {
+        margin-top: 50px;
+
+        grid-template-columns:
+            1fr;
+
+        gap: 14px;
+    }
+
+    .about-stat-card {
+        min-height: 125px;
+
+        padding:
+            25px
+            22px;
+
+        border-radius: 17px;
+    }
+
+    .about-stat-card h3 {
+        font-size: 2rem;
+    }
+
+    .about-stat-card p {
+        margin-top: 8px;
+
+        font-size: 0.84rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE MUY PEQUEÑO
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .about-papelera {
+        padding:
+            60px
+            5%
+            70px;
+    }
+
+    .about-image img {
+        height: 230px;
+    }
+
+    .about-paragraphs p {
+        padding:
+            18px
+            15px
+            18px
+            21px;
+
+        font-size: 0.88rem;
+    }
+
+    .about-stat-card {
+        padding:
+            22px
+            19px;
+    }
+
+    .about-stat-card h3 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-image img,
+    .about-stat-card,
+    .about-paragraphs p {
+        transition: none;
+    }
+}

@@ -1,0 +1,819 @@
+/* =========================================================
+   NOSOTROS
+========================================================= */
+
+.nosotros-section {
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background:
+        radial-gradient(
+            circle at 8% 12%,
+            rgba(0, 145, 255, 0.24),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 92% 18%,
+            rgba(30, 110, 255, 0.20),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 50% 65%,
+            rgba(0, 200, 255, 0.16),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(50, 125, 255, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #c8ecff 0%,
+            #d2efff 18%,
+            #c4e8ff 38%,
+            #d8f3ff 58%,
+            #c8eaff 78%,
+            #e9f8ff 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORACIONES DEL FONDO
+========================================================= */
+
+.nosotros-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    top: -320px;
+    right: -220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 130, 255, 0.28),
+            rgba(0, 190, 255, 0.12) 40%,
+            rgba(100, 215, 255, 0.04) 58%,
+            transparent 74%
+        );
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+.nosotros-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    bottom: -300px;
+    left: -220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 170, 255, 0.26),
+            rgba(35, 120, 255, 0.12) 42%,
+            rgba(100, 215, 255, 0.04) 58%,
+            transparent 75%
+        );
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.nosotros-inner {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.nosotros-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #006ee6;
+
+    font-weight: 700;
+
+    font-size: .85rem;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.nosotros-eyebrow span {
+    width: 26px;
+    height: 3px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006ee6,
+            #00cfff
+        );
+}
+
+
+/* =========================================================
+   TOP
+   LEFT: TITLE + IMAGE
+   RIGHT: PARAGRAPHS
+========================================================= */
+
+.nosotros-top {
+    margin-top: 18px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.nosotros-left h2 {
+    font-size:
+        clamp(
+            1.9rem,
+            3vw,
+            2.5rem
+        );
+
+    line-height: 1.22;
+
+    letter-spacing: -.8px;
+
+    color: #041525;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.nosotros-image {
+    margin-top: 26px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(0, 120, 230, 0.18);
+
+    box-shadow:
+        0 22px 50px
+        rgba(0, 75, 140, 0.16),
+        0 6px 18px
+        rgba(0, 145, 255, 0.07);
+
+    position: relative;
+}
+
+.nosotros-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 174, 255, 0),
+            rgba(0, 70, 130, 0.10)
+        );
+
+    pointer-events: none;
+}
+
+.nosotros-image img {
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform .6s ease;
+}
+
+.nosotros-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.nosotros-right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.nosotros-right p {
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: #456b82;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.nosotros-stats {
+    margin-top: 44px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.nosotros-stat-card {
+    padding: 22px 24px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061a46,
+            #075ed6 55%,
+            #009fdf 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(95, 205, 255, 0.28);
+
+    border-bottom:
+        4px solid
+        #00cfff;
+
+    box-shadow:
+        0 16px 35px
+        rgba(0, 75, 145, 0.20);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.nosotros-stat-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 24px 45px
+        rgba(0, 100, 190, 0.25);
+}
+
+
+/* =========================================================
+   STAT DECORATION
+========================================================= */
+
+.nosotros-stat-card::after {
+    content: "";
+
+    position: absolute;
+
+    right: -25px;
+    bottom: -25px;
+
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 220, 255, 0.24),
+            rgba(95, 180, 255, 0.08) 50%,
+            transparent 72%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   STAT TITLE
+========================================================= */
+
+.nosotros-stat-card h3 {
+    font-size: 1.7rem;
+
+    color: #ffffff;
+
+    letter-spacing: -.4px;
+
+    line-height: 1;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   STAT DESCRIPTION
+========================================================= */
+
+.nosotros-stat-card p {
+    margin-top: 6px;
+
+    font-size: .74rem;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    color: #bdeaff;
+
+    line-height: 1.3;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.nosotros-featured {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.3fr;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(0, 115, 220, 0.20);
+
+    box-shadow:
+        0 22px 50px
+        rgba(0, 60, 120, 0.18);
+}
+
+
+/* =========================================================
+   FEATURED IMAGE
+========================================================= */
+
+.nosotros-featured-image {
+    height: 100%;
+
+    background: #bdeaff;
+}
+
+.nosotros-featured-image img {
+    width: 100%;
+
+    height: 100%;
+
+    max-height: 260px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================================================
+   FEATURED BODY
+========================================================= */
+
+.nosotros-featured-body {
+    padding: 26px 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061225 0%,
+            #082b63 48%,
+            #075a9e 100%
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FEATURED BODY GLOW
+========================================================= */
+
+.nosotros-featured-body::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -80px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 205, 255, 0.25),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FEATURED TITLE
+========================================================= */
+
+.nosotros-featured-body h4 {
+    font-size: 1rem;
+
+    letter-spacing: .3px;
+
+    color: #7fe6ff;
+
+    text-transform: uppercase;
+
+    line-height: 1.35;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   FEATURED DESCRIPTION
+========================================================= */
+
+.nosotros-featured-body p {
+    margin-top: 12px;
+
+    font-size: .88rem;
+
+    line-height: 1.7;
+
+    color: #d8efff;
+
+    max-width: 560px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nosotros-section {
+        padding:
+            80px
+            6%;
+    }
+
+
+    /* =========================
+       TOP
+    ========================= */
+
+    .nosotros-top {
+        grid-template-columns: 1fr;
+
+        gap: 36px;
+    }
+
+
+    /* =========================
+       IMAGE
+    ========================= */
+
+    .nosotros-image img {
+        height: 300px;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .nosotros-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       FEATURED
+    ========================= */
+
+    .nosotros-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-featured-image img {
+        max-height: 180px;
+    }
+
+    .nosotros-featured-body {
+        padding:
+            28px
+            26px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .nosotros-section {
+        padding:
+            70px
+            5%
+            80px;
+    }
+
+
+    /* =========================
+       EYEBROW
+    ========================= */
+
+    .nosotros-eyebrow {
+        font-size: .76rem;
+
+        letter-spacing: 1.2px;
+    }
+
+
+    /* =========================
+       TOP
+    ========================= */
+
+    .nosotros-top {
+        margin-top: 16px;
+
+        gap: 30px;
+    }
+
+
+    /* =========================
+       TITLE
+    ========================= */
+
+    .nosotros-left h2 {
+        font-size:
+            clamp(
+                1.85rem,
+                8vw,
+                2.3rem
+            );
+
+        letter-spacing: -.7px;
+    }
+
+
+    /* =========================
+       IMAGE
+    ========================= */
+
+    .nosotros-image {
+        margin-top: 22px;
+
+        border-radius: 16px;
+    }
+
+    .nosotros-image img {
+        height: 250px;
+    }
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    .nosotros-right {
+        gap: 16px;
+    }
+
+    .nosotros-right p {
+        font-size: .94rem;
+
+        line-height: 1.75;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .nosotros-stats {
+        margin-top: 34px;
+
+        gap: 16px;
+    }
+
+    .nosotros-stat-card {
+        padding:
+            21px
+            22px;
+
+        border-radius: 13px;
+    }
+
+    .nosotros-stat-card h3 {
+        font-size: 1.55rem;
+    }
+
+
+    /* =========================
+       FEATURED
+    ========================= */
+
+    .nosotros-featured {
+        margin-top: 18px;
+
+        border-radius: 13px;
+    }
+
+    .nosotros-featured-image img {
+        height: 180px;
+
+        max-height: none;
+    }
+
+    .nosotros-featured-body {
+        padding:
+            25px
+            22px;
+    }
+
+    .nosotros-featured-body h4 {
+        font-size: .9rem;
+    }
+
+    .nosotros-featured-body p {
+        font-size: .84rem;
+
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   MOBILE MUY PEQUEÑO
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .nosotros-section {
+        padding:
+            60px
+            5%
+            70px;
+    }
+
+    .nosotros-left h2 {
+        font-size: 1.75rem;
+    }
+
+    .nosotros-image img {
+        height: 220px;
+    }
+
+    .nosotros-right p {
+        font-size: .88rem;
+    }
+
+    .nosotros-stat-card {
+        padding:
+            19px
+            20px;
+    }
+
+    .nosotros-stat-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .nosotros-featured-image img {
+        height: 160px;
+    }
+
+    .nosotros-featured-body {
+        padding:
+            23px
+            19px;
+    }
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .nosotros-image img,
+    .nosotros-stat-card {
+        transition: none;
+    }
+}

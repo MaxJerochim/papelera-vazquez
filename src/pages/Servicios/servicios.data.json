@@ -1,0 +1,73 @@
+{
+    "sectionLabel": "Nuestros servicios",
+
+    "title": "Soluciones integrales para la gestión responsable de materiales reciclables",
+
+    "description": "Brindamos soluciones adaptadas a las necesidades de cada organización, combinando infraestructura propia, equipamiento especializado y un equipo capacitado para garantizar procesos eficientes, seguros y sustentables.",
+
+
+    "services":[
+
+
+        {
+            "title":"Prensa estacionaria",
+
+            "description":"Contamos con prensas estacionarias de alta capacidad destinadas a la compactación eficiente de materiales reciclables. Este sistema permite optimizar espacios de almacenamiento, mejorar los tiempos operativos y facilitar la logística de retiro, garantizando un proceso más ordenado y rentable para cada cliente.",
+
+            "image":"/images/REDES GFIBRAS2026/98.webp"
+        },
+
+
+
+        {
+            "title":"Canastos industriales",
+
+            "description":"Ofrecemos soluciones mediante canastos industriales diseñados para la correcta separación, clasificación y acumulación de materiales reciclables dentro de las instalaciones de nuestros clientes. Facilitamos una gestión más organizada, limpia y eficiente de los residuos generados.",
+
+            "image":"/images/REDES GFIBRAS2026/23.webp"
+        },
+
+
+
+        {
+            "title":"Destrucción de archivos confidenciales",
+
+            "description":"Realizamos procesos seguros de destrucción de documentación confidencial, asegurando el tratamiento responsable de información sensible. Nuestro servicio garantiza privacidad, trazabilidad y cumplimiento de los procedimientos adecuados para la disposición final del material.",
+
+            "image":"/images/REDES GFIBRAS2026/89.webp"
+        },
+
+
+
+        {
+            "title":"Logística propia",
+
+            "description":"Disponemos de una flota y logística propia que nos permite coordinar retiros programados, optimizar recorridos y brindar una respuesta eficiente ante las necesidades de cada empresa. Acompañamos todo el proceso desde la recolección hasta la gestión final del material.",
+
+            "image":"/images/REDES GFIBRAS2026/12.webp"
+        },
+
+
+
+        {
+            "title":"Balanza propia",
+
+            "description":"Nuestra infraestructura cuenta con balanza propia para garantizar mediciones precisas y procesos transparentes en cada operación. Esto permite llevar un control confiable del material recibido y ofrecer mayor seguridad durante toda la gestión.",
+
+            "image":"/images/REDES GFIBRAS2026/99.webp"
+        },
+
+
+
+        {
+            "title":"Personal capacitado",
+
+            "description":"Nuestro equipo humano cuenta con experiencia y capacitación constante para desarrollar cada tarea de manera profesional y segura. Trabajamos bajo criterios de eficiencia, responsabilidad y compromiso ambiental en cada etapa del proceso.",
+
+            "image":"/images/REDES GFIBRAS2026/49.webp"
+        }
+
+
+    ]
+
+}

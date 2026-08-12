@@ -1,0 +1,350 @@
+.servicios-destacados{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f2f0ff 100%
+    );
+
+}
+
+
+.sd-inner{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+}
+
+
+
+.sd-header{
+
+    max-width:680px;
+
+}
+
+
+.sd-eyebrow{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#6d28d9;
+
+    font-weight:700;
+
+    font-size:.85rem;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+.sd-eyebrow span{
+
+    width:26px;
+
+    height:2px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #1565ff,
+        #8b5cf6
+    );
+
+}
+
+
+.sd-header h2{
+
+    margin-top:18px;
+
+    font-size:clamp(2rem,3.6vw,3rem);
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+    color:#0d1024;
+
+}
+
+
+.sd-header p{
+
+    margin-top:20px;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#5c5f79;
+
+}
+
+
+
+
+/* ========================= */
+/* BENTO GRID */
+/* ========================= */
+
+
+.sd-bento{
+
+    margin-top:55px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-auto-rows:280px;
+
+    gap:26px;
+
+}
+
+
+.sd-card-large{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+
+}
+
+
+.sd-card{
+
+    position:relative;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    box-shadow:0 20px 45px rgba(20,10,60,.12);
+
+    transition:transform .45s ease, box-shadow .45s ease;
+
+}
+
+
+.sd-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(109,40,217,.22);
+
+}
+
+
+.sd-image{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+.sd-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .7s ease;
+
+}
+
+
+.sd-card:hover .sd-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+.sd-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        rgba(10,10,30,0) 0%,
+        rgba(10,10,30,.55) 60%,
+        rgba(10,10,30,.88) 100%
+    );
+
+}
+
+
+.sd-body{
+
+    position:relative;
+
+    z-index:1;
+
+    padding:30px 30px 34px;
+
+    color:#ffffff;
+
+}
+
+
+.sd-tag{
+
+    display:inline-block;
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#ffffff;
+
+    background:rgba(139,92,246,.5);
+
+    backdrop-filter:blur(6px);
+
+    -webkit-backdrop-filter:blur(6px);
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+
+.sd-body h3{
+
+    margin-top:14px;
+
+    font-size:1.25rem;
+
+    letter-spacing:-.3px;
+
+}
+
+
+.sd-card-large .sd-body h3{
+
+    font-size:1.7rem;
+
+}
+
+
+.sd-body p{
+
+    margin-top:10px;
+
+    font-size:.92rem;
+
+    line-height:1.65;
+
+    color:#dcdcf5;
+
+    max-width:420px;
+
+}
+
+
+.sd-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:16px;
+
+    font-size:.88rem;
+
+    font-weight:700;
+
+    color:#c4b5fd;
+
+}
+
+
+.sd-link i{
+
+    font-style:normal;
+
+    transition:transform .3s;
+
+}
+
+
+.sd-card:hover .sd-link i{
+
+    transform:translateX(5px);
+
+}
+
+
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+@media(max-width:900px){
+
+.servicios-destacados{
+
+    padding:90px 6%;
+
+}
+
+.sd-bento{
+
+    grid-template-columns:1fr;
+
+    grid-auto-rows:260px;
+
+}
+
+.sd-card-large{
+
+    grid-column:span 1;
+
+    grid-row:span 1;
+
+    height:340px;
+
+}
+
+}

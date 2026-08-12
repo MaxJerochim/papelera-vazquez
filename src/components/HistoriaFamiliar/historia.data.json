@@ -1,0 +1,31 @@
+{
+    "eyebrow": "Nuestra historia",
+    "title": "Tres generaciones dedicadas a darle una nueva vida al papel",
+    "lead": "Somos la tercera generación de una familia de papeleros, comprometidos con transformar lo que otros descartan en un recurso valioso.",
+    "paragraphs": [
+        "Este proyecto nació hace más de 60 años, cuando nuestro abuelo recorría la zona con una sola camioneta y todo el trabajo se hacía a mano.",
+        "Hoy Grupo Fibras está formado por Javier, Juan Manuel, Darío y Pablo, junto a más de 15 familias que día a día se comprometen con la gestión responsable de residuos de papel."
+    ],
+    "image": {
+        "src": "/images/REDES GFIBRAS2026/76.webp",
+        "alt": "Historia familiar de Grupo Fibras"
+    },
+    "badge": {
+        "value": "+60",
+        "label": "Años de trayectoria familiar"
+    },
+    "timeline": [
+        {
+            "gen": "1ra generación",
+            "desc": "Nuestro abuelo comenzó el camino con una camioneta y todo el trabajo a mano."
+        },
+        {
+            "gen": "2da generación",
+            "desc": "Javier y Juan Manuel llevaron el oficio adelante y lo hicieron crecer."
+        },
+        {
+            "gen": "3ra generación",
+            "desc": "Hoy, junto a Darío y Pablo, seguimos comprometidos con cada cliente."
+        }
+    ]
+}

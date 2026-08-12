@@ -1,0 +1,864 @@
+/* =========================================================
+   SERVICIOS
+========================================================= */
+
+.servicios-grid {
+    width: 100%;
+
+    padding: 120px 8% 140px;
+
+    background:
+        radial-gradient(
+            circle at 8% 12%,
+            rgba(0, 91, 190, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 92% 18%,
+            rgba(25, 105, 200, 0.08),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 50% 55%,
+            rgba(0, 110, 210, 0.055),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 80% 90%,
+            rgba(45, 125, 210, 0.07),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f8fbff 18%,
+            #eef5fb 38%,
+            #f9fcff 58%,
+            #f1f7fc 78%,
+            #ffffff 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORACIONES DEL FONDO
+========================================================= */
+
+.servicios-grid::before {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    top: -360px;
+    right: -250px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 92, 190, 0.12),
+            rgba(30, 110, 200, 0.055) 38%,
+            rgba(80, 150, 220, 0.025) 55%,
+            transparent 74%
+        );
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+
+.servicios-grid::after {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    bottom: -320px;
+    left: -260px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 95, 190, 0.10),
+            rgba(40, 120, 205, 0.045) 40%,
+            rgba(100, 165, 220, 0.02) 58%,
+            transparent 75%
+        );
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.servicios-inner {
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.servicios-header {
+    max-width: 720px;
+}
+
+.servicios-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #006ee6;
+
+    font-weight: 700;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.servicios-eyebrow span {
+    width: 28px;
+    height: 2px;
+
+    display: block;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006ee6,
+            #00cfff
+        );
+}
+
+
+/* =========================================================
+   TITULO
+========================================================= */
+
+.servicios-header h2 {
+    margin: 18px 0 0;
+
+    font-size:
+        clamp(
+            2rem,
+            3.6vw,
+            3rem
+        );
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    color: #041525;
+}
+
+.servicios-header p {
+    margin: 20px 0 0;
+
+    font-size: 1.08rem;
+
+    line-height: 1.8;
+
+    color: #486b83;
+}
+
+
+/* =========================================================
+   LABEL DE SECCIÓN
+========================================================= */
+
+.servicios-section-label {
+    margin-top: 65px;
+
+    padding-bottom: 18px;
+
+    border-bottom:
+        1px solid
+        rgba(0, 103, 214, 0.20);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: #006ee6;
+
+    position: relative;
+}
+
+
+/* Línea decorativa */
+
+.servicios-section-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -1px;
+
+    width: 70px;
+    height: 2px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006ee6,
+            #00cfff
+        );
+}
+
+
+/* =========================================================
+   GRID DE CARDS
+========================================================= */
+
+.servicios-cards {
+    margin-top: 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.servicio-card {
+    position: relative;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid rgba(0, 112, 230, 0.20);
+
+    box-shadow:
+        0 18px 45px rgba(0, 76, 145, 0.13),
+        0 5px 18px rgba(0, 140, 255, 0.07);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+}
+
+
+/* =========================================================
+   BORDE INTERIOR DEGRADADO
+========================================================= */
+
+.servicio-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    padding: 1px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 116, 255, 0.75),
+            rgba(0, 211, 255, 0.20),
+            rgba(35, 120, 255, 0.60)
+        );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask-composite: exclude;
+
+    pointer-events: none;
+
+    opacity: 0.85;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   HOVER CARD
+========================================================= */
+
+.servicio-card:hover {
+    transform: translateY(-9px);
+
+    border-color:
+        rgba(0, 143, 255, 0.45);
+
+    box-shadow:
+        0 30px 65px
+        rgba(0, 105, 220, 0.20),
+        0 10px 30px
+        rgba(0, 72, 145, 0.11);
+}
+
+
+/* =========================================================
+   BRILLO SUTIL AL HACER HOVER
+========================================================= */
+
+.servicio-card::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.28),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    pointer-events: none;
+
+    z-index: 6;
+
+    transition:
+        left 0.8s ease;
+}
+
+.servicio-card:hover::after {
+    left: 150%;
+}
+
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+.servicio-image {
+    width: 100%;
+
+    height: 280px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background: #eef6fc;
+}
+
+
+/* =========================================================
+   OVERLAY IMAGEN
+========================================================= */
+
+.servicio-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 70, 130, 0),
+            rgba(0, 78, 135, 0.15)
+        );
+
+    pointer-events: none;
+
+    transition:
+        background 0.4s ease;
+}
+
+.servicio-card:hover
+.servicio-image::after {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 174, 255, 0.04),
+            rgba(0, 65, 125, 0.20)
+        );
+}
+
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+.servicio-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s
+        cubic-bezier(
+            0.2,
+            0.8,
+            0.2,
+            1
+        );
+}
+
+.servicio-card:hover
+.servicio-image img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.servicio-body {
+    padding: 29px 30px 34px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.99),
+            rgba(247, 252, 255, 1)
+        );
+
+    position: relative;
+}
+
+
+/* =========================================================
+   LÍNEA DECORATIVA DEL BODY
+========================================================= */
+
+.servicio-body::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 30px;
+
+    width: 45px;
+    height: 3px;
+
+    border-radius: 0 0 5px 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #006ee6,
+            #00cfff
+        );
+
+    transition:
+        width 0.4s ease;
+}
+
+.servicio-card:hover
+.servicio-body::before {
+    width: 85px;
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.servicio-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        6px
+        14px;
+
+    border-radius: 50px;
+
+    border:
+        1px solid
+        rgba(0, 125, 235, 0.18);
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf7ff,
+            #e5f2fb
+        );
+
+    color: #006ee6;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.servicio-card:hover
+.servicio-tag {
+    transform: translateX(4px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5f3ff,
+            #f0f9ff
+        );
+
+    box-shadow:
+        0 5px 16px
+        rgba(0, 125, 235, 0.14);
+}
+
+
+/* =========================================================
+   TITULO CARD
+========================================================= */
+
+.servicio-body h3 {
+    margin: 16px 0 0;
+
+    color: #041525;
+
+    font-size: 1.4rem;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+========================================================= */
+
+.servicio-body p {
+    margin: 12px 0 0;
+
+    color: #557184;
+
+    font-size: 0.98rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   PEQUEÑO INDICADOR VISUAL
+========================================================= */
+
+.servicio-body h3::after {
+    content: "→";
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    color: #009fe8;
+
+    font-size: 1rem;
+
+    opacity: 0;
+
+    transform: translateX(-8px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.servicio-card:hover
+.servicio-body h3::after {
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .servicios-grid {
+        padding:
+            100px
+            6%
+            110px;
+    }
+
+    .servicios-cards {
+        gap: 24px;
+    }
+
+    .servicio-image {
+        height: 250px;
+    }
+}
+
+
+/* =========================================================
+   TABLET PEQUEÑO
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .servicios-grid {
+        padding:
+            90px
+            6%;
+    }
+
+    .servicios-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-image {
+        height: 320px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .servicios-grid {
+        padding:
+            70px
+            5%
+            80px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .servicios-header h2 {
+        font-size:
+            clamp(
+                1.9rem,
+                8vw,
+                2.3rem
+            );
+
+        letter-spacing: -0.7px;
+    }
+
+    .servicios-header p {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       LABEL
+    ========================= */
+
+    .servicios-section-label {
+        margin-top: 45px;
+
+        padding-bottom: 15px;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .servicios-cards {
+        margin-top: 30px;
+
+        gap: 20px;
+    }
+
+    .servicio-card {
+        border-radius: 20px;
+    }
+
+
+    /* =========================
+       IMAGEN
+    ========================= */
+
+    .servicio-image {
+        height: 240px;
+    }
+
+
+    /* =========================
+       BODY
+    ========================= */
+
+    .servicio-body {
+        padding:
+            27px
+            21px
+            30px;
+    }
+
+    .servicio-body::before {
+        left: 21px;
+    }
+
+    .servicio-body h3 {
+        font-size: 1.25rem;
+    }
+
+    .servicio-body p {
+        font-size: 0.9rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       TAG
+    ========================= */
+
+    .servicio-tag {
+        font-size: 0.68rem;
+
+        padding:
+            5px
+            12px;
+    }
+
+
+    /* En mobile no mostramos la flecha
+       para mantenerlo limpio */
+
+    .servicio-body h3::after {
+        display: none;
+    }
+
+
+    /* Animación más discreta */
+
+    .servicio-card:hover {
+        transform:
+            translateY(-5px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE MUY PEQUEÑO
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .servicios-grid {
+        padding:
+            60px
+            5%
+            70px;
+    }
+
+    .servicio-image {
+        height: 215px;
+    }
+
+    .servicio-body {
+        padding:
+            24px
+            18px
+            28px;
+    }
+
+    .servicio-body::before {
+        left: 18px;
+    }
+
+    .servicio-body h3 {
+        font-size: 1.18rem;
+    }
+
+    .servicio-body p {
+        font-size: 0.86rem;
+    }
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .servicio-card,
+    .servicio-image img,
+    .servicio-tag,
+    .servicio-body::before,
+    .servicio-body h3::after,
+    .servicio-card::after {
+        transition: none;
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "eyebrow": "Soluciones para empresas",
+    "title": "Gestión de residuos secos a la medida de tu empresa",
+    "paragraphs": [
+        "Cada empresa genera diferentes tipos y cantidades de materiales. Por eso desarrollamos soluciones adaptadas a las necesidades particulares de cada operación.",
+        "Desde la colocación de canastos y contenedores hasta la recolección, compactación, pesaje y gestión de los materiales, facilitamos el proceso de recuperación para que la sostenibilidad forme parte de tu negocio."
+    ],
+    "buttons": [
+        { "label": "Conocé nuestras soluciones", "variant": "primary" },
+        { "label": "Consultar por WhatsApp", "variant": "secondary" }
+    ],
+    "features": [
+        {
+            "title": "Contenedores a medida",
+            "description": "Instalación de canastos y contenedores según el volumen y espacio disponible de cada planta o depósito."
+        },
+        {
+            "title": "Pesaje y trazabilidad",
+            "description": "Registramos el peso y origen de cada retiro, entregando reportes que documentan el material recuperado."
+        },
+        {
+            "title": "Compactación en planta",
+            "description": "Ofrecemos equipos de compactación para reducir el volumen del material y optimizar la logística de retiro."
+        },
+        {
+            "title": "Cumplimiento normativo",
+            "description": "Operamos bajo habilitaciones vigentes, con documentación respaldatoria para auditorías internas y externas."
+        }
+    ]
+}

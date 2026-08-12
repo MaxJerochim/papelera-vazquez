@@ -1,0 +1,401 @@
+.historia-familiar{
+
+    width:100%;
+
+    padding:130px 8%;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #050b1f 0%,
+        #131b4d 45%,
+        #3d1f78 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.historia-familiar::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    border-radius:50%;
+
+    right:-220px;
+
+    top:-220px;
+
+    background:radial-gradient(circle, rgba(139,92,246,.28), transparent 70%);
+
+    pointer-events:none;
+
+}
+
+
+.historia-inner{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+
+/* ========================= */
+/* TOP: TEXT + VISUAL */
+/* ========================= */
+
+
+.historia-top{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+.historia-eyebrow{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#c4b5fd;
+
+    font-weight:700;
+
+    font-size:.85rem;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+.historia-eyebrow span{
+
+    width:26px;
+
+    height:2px;
+
+    background:#8b5cf6;
+
+}
+
+
+.historia-text h2{
+
+    margin-top:18px;
+
+    font-size:clamp(2rem,3.4vw,2.9rem);
+
+    line-height:1.2;
+
+    letter-spacing:-1px;
+
+    color:#ffffff;
+
+}
+
+
+.historia-lead{
+
+    margin-top:24px;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    color:#e4e7ff;
+
+    font-weight:500;
+
+}
+
+
+.historia-paragraph{
+
+    margin-top:18px;
+
+    font-size:1rem;
+
+    line-height:1.85;
+
+    color:#a8b0d4;
+
+}
+
+
+
+
+/* ========================= */
+/* VISUAL */
+/* ========================= */
+
+
+.historia-visual{
+
+    position:relative;
+
+}
+
+
+.historia-image{
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.4);
+
+}
+
+
+.historia-image img{
+
+    width:100%;
+
+    height:460px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .7s ease;
+
+}
+
+
+.historia-visual:hover .historia-image img{
+
+    transform:scale(1.06);
+
+}
+
+
+.historia-badge{
+
+    position:absolute;
+
+    bottom:-30px;
+
+    left:-30px;
+
+    padding:26px 30px;
+
+    border-radius:20px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #1565ff,
+        #8b5cf6
+    );
+
+    box-shadow:0 20px 45px rgba(109,40,217,.45);
+
+}
+
+
+.historia-badge h3{
+
+    font-size:2.2rem;
+
+    color:#ffffff;
+
+    letter-spacing:-1px;
+
+}
+
+
+.historia-badge p{
+
+    margin-top:4px;
+
+    font-size:.82rem;
+
+    color:#e4e7ff;
+
+    max-width:150px;
+
+    line-height:1.4;
+
+}
+
+
+
+
+/* ========================= */
+/* TIMELINE */
+/* ========================= */
+
+
+.historia-timeline{
+
+    margin-top:110px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    position:relative;
+
+}
+
+
+.historia-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:6px;
+
+    left:0;
+
+    right:0;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+.historia-timeline-item{
+
+    position:relative;
+
+    padding-top:36px;
+
+}
+
+
+.historia-dot{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+    background:#8b5cf6;
+
+    box-shadow:0 0 0 6px rgba(139,92,246,.2);
+
+}
+
+
+.historia-gen{
+
+    display:block;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    color:#8b5cf6;
+
+}
+
+
+.historia-timeline-item p{
+
+    margin-top:10px;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    color:#a8b0d4;
+
+}
+
+
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+@media(max-width:900px){
+
+.historia-familiar{
+
+    padding:90px 6%;
+
+}
+
+.historia-top{
+
+    grid-template-columns:1fr;
+
+    gap:70px;
+
+}
+
+.historia-badge{
+
+    left:16px;
+
+    bottom:-24px;
+
+    padding:20px 24px;
+
+}
+
+.historia-timeline{
+
+    grid-template-columns:1fr;
+
+    gap:36px;
+
+    margin-top:90px;
+
+}
+
+.historia-timeline::before{
+
+    display:none;
+
+}
+
+}

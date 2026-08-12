@@ -1,29 +1,29 @@
-import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
-import Cards from "../components/Cards/Cards"
-import Carousel from "../components/Carousel/Carousel"
-import Footer from "../components/Footer/Footer"
-import { companyInfo } from "../data/company_info/company_info";
-import InfoSection from "../components/InfoSection/InfoSection";
-import { products_c } from "../data/productos_c/productos_c";
-//import About from "../components/About/About";
-//import Services from "../components/Services/Services";
-//import CTA from "../components/CTA/CTA";
-//import Footer from "../components/Footer/Footer";
+import Cards from "../components/Cards/Cards";
+import AboutPapelera from "../components/AboutPapelera/AboutPapelera";
+import ServiciosGrid from "../components/ServiciosGrid/ServiciosGrid";
+import ProcesoDestacado from "../components/ProcesoDestacado/ProcesoDestacado";
+import SolucionesEmpresas from "../components/SolucionesEmpresas/SolucionesEmpresas";
+import ServiciosDestacados from "../components/ServiciosDestacados/ServiciosDestacados";
+import HistoriaFamiliar from "../components/HistoriaFamiliar/HistoriaFamiliar";
+import PublicosSegmentos from "../components/PublicosSegmentos/PublicosSegmentos"; // 1
+import MineriaSection from "../components/MineriaSection/MineriaSection"; // 2
+import NosotrosSection from "../components/NosotrosSection/NosotrosSection"; // 3
+import Footer from "../components/Footer/Footer";
+import ProductCarousel from "../components/Carousel/Carousel";
+import products_c from "../data/productos_c/productos_c";
 
 export default function Home() {
   return (
     <>
-    
       <Hero />
       <Cards />
-      <InfoSection data={companyInfo.about} />
-      <InfoSection data={companyInfo.history} />
-      <InfoSection data={companyInfo.circularEconomy} />
-      <Carousel products={products_c} />
+      <AboutPapelera />
+      <HistoriaFamiliar />
+      <ServiciosGrid />
+      <ProcesoDestacado />
+      <ProductCarousel products={products_c}/>
       <Footer />
-      
-      
     </>
   );
 }

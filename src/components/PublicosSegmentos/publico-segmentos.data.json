@@ -1,0 +1,40 @@
+{
+    "eyebrow": "A quién ayudamos",
+    "quote": "Queremos generar una imagen de confianza, seguridad y transparencia con cada cliente que elige trabajar con nosotros.",
+    "stat": {
+        "value": "+15",
+        "label": "Familias que trabajan con nosotros cada día"
+    },
+    "segments": [
+        {
+            "letter": "I",
+            "name": "Imprentas",
+            "desc": "Retiro periódico de recortes y sobrantes de producción editorial."
+        },
+        {
+            "letter": "G",
+            "name": "Gráficas",
+            "desc": "Soluciones de recolección adaptadas al volumen de cada planta."
+        },
+        {
+            "letter": "C",
+            "name": "Fábricas de corrugado",
+            "desc": "Gestión de grandes cantidades de cartón corrugado."
+        },
+        {
+            "letter": "F",
+            "name": "Fundaciones e instituciones",
+            "desc": "Programas de recolección responsable y trazable."
+        },
+        {
+            "letter": "D",
+            "name": "Grandes depósitos y consumidores",
+            "desc": "Servicio con contenedor Roll Off para cargas de gran volumen."
+        },
+        {
+            "letter": "P",
+            "name": "Particulares",
+            "desc": "Retiros eventuales para cargas puntuales en zona sur."
+        }
+    ]
+}

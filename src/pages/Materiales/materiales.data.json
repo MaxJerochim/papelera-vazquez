@@ -1,0 +1,70 @@
+{
+    "hero": {
+        "eyebrow": "Compra directa · Sin intermediarios",
+        "headingLines": [
+            { "text": "Tu material vale.", "accent": false },
+            { "text": "Lo pesamos y lo pagamos.", "accent": true }
+        ],
+        "subheading": "Comprás y vendés papel, cartón y otros materiales reciclables directo con nosotros. Elegí tu material y consultá el precio del día por WhatsApp.",
+        "scrollLabel": "Ver materiales"
+    },
+    "whatsapp": {
+        "phone": "5491100000000",
+        "messageTemplate": "Hola! Quiero consultar el precio de {material}. ¿Me pasan info?"
+    },
+    "sectionHeader": {
+        "eyebrow": "Materiales",
+        "title": "Elegí tu material",
+        "subtitle": "Tocá un material para consultar el precio actual, directo por WhatsApp."
+    },
+    "materiales": [
+        {
+            "id": "planilla",
+            "name": "Planilla (sin lomo)",
+            "image": "/images/materiales/planilla.webp",
+            "alt": "Planilla de papel sin lomo para reciclaje"
+        },
+        {
+            "id": "carton",
+            "name": "Cartón",
+            "image": "/images/materiales/carton.webp",
+            "alt": "Cajas de cartón para reciclaje"
+        },
+        {
+            "id": "diarios",
+            "name": "Diarios",
+            "image": "/images/materiales/diarios.webp",
+            "alt": "Diarios y papel de periódico para reciclaje"
+        },
+        {
+            "id": "papel-archivo",
+            "name": "Papel de archivo",
+            "image": "/images/materiales/papel-archivo.webp",
+            "alt": "Papel de archivo compactado para reciclaje"
+        },
+        {
+            "id": "afiches",
+            "name": "Afiches",
+            "image": "/images/materiales/afiches.webp",
+            "alt": "Rollos de afiches para reciclaje"
+        },
+        {
+            "id": "troquelado",
+            "name": "Troquelado",
+            "image": "/images/materiales/troquelado.webp",
+            "alt": "Recortes de troquelado de cartón para reciclaje"
+        },
+        {
+            "id": "polietileno",
+            "name": "Polietileno",
+            "image": "/images/materiales/polietileno.webp",
+            "alt": "Polietileno para reciclaje"
+        },
+        {
+            "id": "chatarra",
+            "name": "Chatarra",
+            "image": "/images/materiales/chatarra.webp",
+            "alt": "Chatarra metálica para reciclaje"
+        }
+    ]
+}

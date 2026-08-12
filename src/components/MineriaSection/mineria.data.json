@@ -1,0 +1,30 @@
+{
+    "eyebrow": "MINERÍA",
+    "title": "GESTIÓN DE RESIDUOS PARA EL SECTOR MINERO",
+    "paragraphs": [
+        "La actividad minera genera grandes volúmenes de residuos especiales que exigen una logística robusta y un cumplimiento normativo estricto. En Silva ponemos al servicio del sector nuestra flota nacional y nuestra red de plantas de tratamiento para operar incluso en zonas remotas.",
+        "Coordinamos retiros programados o de urgencia directamente en yacimiento, con trazabilidad completa mediante manifiestos y certificados de disposición final."
+    ],
+    "buttons": [
+        { "label": "CONOCÉ MÁS SOBRE MINERÍA", "variant": "primary" },
+        { "label": "CONSULTAR POR WHATSAPP", "variant": "secondary" }
+    ],
+    "cards": [
+        {
+            "title": "ACEITES Y LUBRICANTES DE MAQUINARIA PESADA",
+            "description": "Retiro y regeneración de aceites usados de equipos viales, perforadoras y camiones mineros, con unidades de tanque de hasta 25.000 litros."
+        },
+        {
+            "title": "TIERRAS Y SUELOS CONTAMINADOS",
+            "description": "Semirremolques de batea de 25 toneladas con brazo hidráulico para movimiento de suelos in situ y transporte a planta de tratamiento."
+        },
+        {
+            "title": "EMULSIONES Y LÍQUIDOS INDUSTRIALES",
+            "description": "Extracción con bombas de vacío de emulsiones de agua con hidrocarburos, barros y otros líquidos generados en la operación."
+        },
+        {
+            "title": "CUMPLIMIENTO Y TRAZABILIDAD",
+            "description": "Operación bajo las habilitaciones nacionales y provinciales vigentes, con documentación respaldatoria para auditorías y organismos de control."
+        }
+    ]
+}

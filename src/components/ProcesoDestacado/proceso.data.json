@@ -1,0 +1,28 @@
+{
+    "sectionLabel": "02 — Clasificación · Personal capacitado",
+    "featured": {
+        "value": "1.200 T",
+        "valueLabel": "Material clasificado por mes · Papel y cartón",
+        "paragraphs": [
+            "Nuestro equipo está formado por personas capacitadas para trabajar en las distintas etapas del proceso de recuperación y gestión de materiales.",
+            "La experiencia y el conocimiento del personal son fundamentales para garantizar una correcta clasificación, manipulación y acondicionamiento, manteniendo estándares de seguridad y eficiencia en cada operación."
+        ]
+    },
+    "checklist": [
+        {
+            "icon": "✓",
+            "title": "Clasificar con precisión",
+            "description": "Separamos los materiales según sus características, mejorando su aprovechamiento y facilitando el procesamiento posterior."
+        },
+        {
+            "icon": "⚙",
+            "title": "Acondicionar y compactar",
+            "description": "Preparamos el material para optimizar su almacenamiento, manipulación y transporte, aprovechando mejor los espacios disponibles."
+        },
+        {
+            "icon": "♻",
+            "title": "Reincorporar al circuito",
+            "description": "Cada material recuperado disminuye el descarte y favorece su reincorporación a la economía circular como recurso productivo."
+        }
+    ]
+}

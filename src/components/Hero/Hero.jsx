@@ -6,6 +6,16 @@ export default function Hero(){
 
         <section className="hero" id="hero">
 
+            <div className="hero-bg">
+                <img
+                    src="/images/REDES GFIBRAS2026/128.webp"
+                    alt="Gestión de residuos de papel y cartón"
+                    className="hero-bg-img"
+                />
+                <div className="hero-overlay"></div>
+            </div>
+
+
             <div className="hero-background">
                 <div className="glow glow-one"></div>
                 <div className="glow glow-two"></div>
@@ -14,106 +24,65 @@ export default function Hero(){
 
             <div className="hero-content">
 
-
-                <div className="hero-text">
-
-                    <div className="hero-tag">
-                        <span></span>
-                        Industria papelera desde 1985
-                    </div>
+                <div className="hero-tag">
+                    <span></span>
+                    Industria papelera desde 1985
+                </div>
 
 
-                    <h1>
-                        Transformamos papel
-                        <strong>
-                            en soluciones óptimas
-                        </strong>
-                        para la industria
-                    </h1>
+                <h1>
+                    Ofrecemos gestión de
+                    <strong>
+                        residuos secos
+                    </strong>
+                    papel y cartón
+                </h1>
 
 
-                    <p>
-                        Diseñamos y fabricamos productos de papel
-                        con tecnología, calidad y compromiso ambiental
-                        para empresas que buscan crecer.
-                    </p>
+                <p>
+                    Diseñamos soluciones de recolección, compra y reciclaje
+                    de papel y cartón con tecnología, calidad y compromiso
+                    ambiental para empresas que buscan crecer.
+                </p>
 
 
-                    <div className="hero-buttons">
+                <div className="hero-buttons">
 
-                        <button className="primary-btn">
-                            Ver productos
-                            <span>→</span>
-                        </button>
-
-
-                        <button className="secondary-btn">
-                            Conocé nuestra empresa
-                        </button>
-
-                    </div>
+                    <button className="primary-btn">
+                        Ver servicios
+                        <span>→</span>
+                    </button>
 
 
-                    <div className="hero-stats">
-
-                        <div>
-                            <h3>40+</h3>
-                            <p>Años de experiencia</p>
-                        </div>
-
-                        <div>
-                            <h3>500+</h3>
-                            <p>Clientes satisfechos</p>
-                        </div>
-
-                        <div>
-                            <h3>99%</h3>
-                            <p>Calidad garantizada</p>
-                        </div>
-
-                    </div>
-
+                    <button className="secondary-btn">
+                        Solicitar cotización
+                    </button>
 
                 </div>
 
 
+                <div className="hero-stats">
 
-                <div className="hero-visual">
-
-
-                    <div className="image-container">
-
-                        <img 
-                          src="/images/REDES GFIBRAS2026/128.webp"
-                          alt="Producto papelero"
-                        />
-
+                    <div>
+                        <h3>40+</h3>
+                        <p>Años de experiencia</p>
                     </div>
 
-
-                    <div className="floating-card">
-
-                        <div className="icon">
-                            ✓
-                        </div>
-
-                        <div>
-                            <strong>
-                                Producción sostenible
-                            </strong>
-
-                            <p>
-                                Procesos responsables
-                            </p>
-                        </div>
-
+                    <div>
+                        <h3>500+</h3>
+                        <p>Clientes satisfechos</p>
                     </div>
 
+                    <div>
+                        <h3>99%</h3>
+                        <p>Calidad garantizada</p>
+                    </div>
 
                 </div>
-
 
             </div>
+
+
 
 
         </section>

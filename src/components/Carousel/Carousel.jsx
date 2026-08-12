@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { createPortal } from "react-dom";
 
 import "./Carousel.css";
 
@@ -12,11 +13,10 @@ export default function ProductCarousel({
 
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = useState(3);
-    const [paused, setPaused] = useState(false);
     const [inView, setInView] = useState(false);
+    const [lightboxIndex, setLightboxIndex] = useState(null);
 
     const sectionRef = useRef(null);
-    const autoplayRef = useRef(null);
 
     // Responsive: cuántas cards se ven por vez
     useEffect(() => {
@@ -46,19 +46,6 @@ export default function ProductCarousel({
     const prev = () => {
         setIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
     };
-
-    // Autoplay
-    useEffect(() => {
-
-        if (paused) return;
-
-        autoplayRef.current = setInterval(() => {
-            next();
-        }, 4000);
-
-        return () => clearInterval(autoplayRef.current);
-
-    }, [paused, maxIndex]);
 
     // Reajustar índice si cambia visible (resize) y queda fuera de rango
     useEffect(() => {
@@ -98,6 +85,42 @@ export default function ProductCarousel({
 
     }, []);
 
+    // ===== Lightbox =====
+
+    const openLightbox = (i) => setLightboxIndex(i);
+    const closeLightbox = useCallback(() => setLightboxIndex(null), []);
+
+    const lightboxNext = useCallback(() => {
+        setLightboxIndex((prev) => (prev === null ? prev : (prev + 1) % products.length));
+    }, [products.length]);
+
+    const lightboxPrev = useCallback(() => {
+        setLightboxIndex((prev) => (prev === null ? prev : (prev - 1 + products.length) % products.length));
+    }, [products.length]);
+
+    // Teclado: Escape para cerrar, flechas para navegar
+    useEffect(() => {
+
+        if (lightboxIndex === null) return;
+
+        function handleKey(e) {
+
+            if (e.key === "Escape") closeLightbox();
+            else if (e.key === "ArrowRight") lightboxNext();
+            else if (e.key === "ArrowLeft") lightboxPrev();
+
+        }
+
+        document.body.style.overflow = "hidden";
+        window.addEventListener("keydown", handleKey);
+
+        return () => {
+            document.body.style.overflow = "";
+            window.removeEventListener("keydown", handleKey);
+        };
+
+    }, [lightboxIndex, closeLightbox, lightboxNext, lightboxPrev]);
+
     const slideWidth = 100 / visible;
 
     return (
@@ -108,6 +131,9 @@ export default function ProductCarousel({
             id="products"
         >
 
+            <div className="carousel-glow carousel-glow-1" />
+            <div className="carousel-glow carousel-glow-2" />
+
             <div className="carousel-intro">
 
                 <span className="carousel-tag">{tag}</span>
@@ -116,11 +142,7 @@ export default function ProductCarousel({
 
             </div>
 
-            <div
-                className="carousel-wrapper"
-                onMouseEnter={() => setPaused(true)}
-                onMouseLeave={() => setPaused(false)}
-            >
+            <div className="carousel-wrapper">
 
                 <button
                     className="carousel-arrow left"
@@ -139,7 +161,7 @@ export default function ProductCarousel({
                         }}
                     >
 
-                        {products.map((product) => (
+                        {products.map((product, i) => (
 
                             <div
                                 key={product.id}
@@ -147,7 +169,13 @@ export default function ProductCarousel({
                                 style={{ width: `${slideWidth}%` }}
                             >
 
-                                <div className="carousel-card">
+                                <div
+                                    className="carousel-card"
+                                    onClick={() => openLightbox(i)}
+                                    role="button"
+                                    tabIndex={0}
+                                    onKeyDown={(e) => e.key === "Enter" && openLightbox(i)}
+                                >
 
                                     <div className="carousel-img-wrapper">
 
@@ -156,6 +184,10 @@ export default function ProductCarousel({
                                             alt={product.description || `Producto ${product.id}`}
                                             loading="lazy"
                                         />
+
+                                        <div className="carousel-img-overlay">
+                                            <span className="carousel-zoom-icon">⤢</span>
+                                        </div>
 
                                     </div>
 
@@ -197,6 +229,63 @@ export default function ProductCarousel({
                 ))}
 
             </div>
+
+            {lightboxIndex !== null && createPortal(
+
+                <div
+                    className="lightbox-backdrop"
+                    onClick={closeLightbox}
+                >
+
+                    <button
+                        className="lightbox-close"
+                        onClick={closeLightbox}
+                        aria-label="Cerrar"
+                    >
+                        ✕
+                    </button>
+
+                    <button
+                        className="lightbox-arrow left"
+                        onClick={(e) => { e.stopPropagation(); lightboxPrev(); }}
+                        aria-label="Anterior"
+                    >
+                        ←
+                    </button>
+
+                    <div
+                        className="lightbox-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+
+                        <img
+                            src={products[lightboxIndex].image}
+                            alt={products[lightboxIndex].description || `Producto ${products[lightboxIndex].id}`}
+                        />
+
+                        <p className="lightbox-caption">
+                            {products[lightboxIndex].description || "Producto de la empresa"}
+                        </p>
+
+                        <span className="lightbox-counter">
+                            {lightboxIndex + 1} / {products.length}
+                        </span>
+
+                    </div>
+
+                    <button
+                        className="lightbox-arrow right"
+                        onClick={(e) => { e.stopPropagation(); lightboxNext(); }}
+                        aria-label="Siguiente"
+                    >
+                        →
+                    </button>
+
+                </div>,
+
+                document.body
+
+            )}
 
         </section>
 

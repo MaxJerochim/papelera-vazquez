@@ -1,0 +1,32 @@
+{
+    "eyebrow": "Servicios",
+    "title": "Gestión integral, de punta a punta",
+    "subtitle": "Acompañamos a nuestros clientes en cada etapa del proceso: colocación de contenedores, recolección, clasificación, compactación y disposición final de papel y cartón.",
+    "sectionLabel": "01 — Recolección · Nuestra flota y equipamiento",
+    "items": [
+        {
+            "image": "/images/REDES GFIBRAS2026/12.webp",
+            "tag": "CONTENEDORES · 1 A 3 M³",
+            "title": "Canastos y contenedores",
+            "description": "Instalamos canastos y contenedores a medida dentro de la planta del cliente, facilitando la separación en origen de papel y cartón para una recolección más eficiente."
+        },
+        {
+            "image": "/images/REDES GFIBRAS2026/58.webp",
+            "tag": "HASTA 8 T · RECOLECCIÓN",
+            "title": "Flota de recolección",
+            "description": "Camiones propios equipados para el retiro programado o de urgencia de grandes volúmenes de material, con rutas optimizadas según la demanda de cada cliente."
+        },
+        {
+            "image": "/images/REDES GFIBRAS2026/91.webp",
+            "tag": "CLASIFICACIÓN MANUAL Y MECÁNICA",
+            "title": "Playa de clasificación",
+            "description": "Separamos los materiales de acuerdo a sus características y condiciones, mejorando su aprovechamiento y la calidad del recurso que vuelve al circuito productivo."
+        },
+        {
+            "image": "/images/REDES GFIBRAS2026/103.webp",
+            "tag": "PRENSADO EN FARDOS",
+            "title": "Compactación y prensado",
+            "description": "Compactamos el material recuperado en fardos, optimizando el espacio de almacenamiento y reduciendo los costos logísticos de transporte a planta."
+        }
+    ]
+}
