@@ -7,12 +7,12 @@
         "Trabajamos junto a nuestros clientes para diseñar soluciones a medida, optimizando la logística y contribuyendo activamente al desarrollo de una economía circular más eficiente."
     ],
     "image": {
-        "src": "/images/REDES GFIBRAS2026/47.webp",
+        "src": "/images/REDES GFIBRAS2026/116.webp",
         "alt": "Planta de recuperación de papel y cartón"
     },
     "stats": [
-        { "value": "+40", "label": "Años en la industria papelera" },
-        { "value": "1.200 T", "label": "Material recuperado por mes" },
-        { "value": "98%", "label": "Reincorporado al circuito productivo" }
+        { "value": "+60", "label": "Años en la industria papelera" },
+        { "value": "+1.200 T", "label": "Material recuperado por mes" },
+        { "value": "99%", "label": "Reincorporado al circuito productivo" }
     ]
 }

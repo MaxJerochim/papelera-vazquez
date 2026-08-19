@@ -16,10 +16,10 @@ export default function Footer() {
             calidad, la eficiencia y el cuidado del medio ambiente.
           </p>
           <div className="footer-socials">
-            <a href="https://instagram.com/papelera.vazquez" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/grupofibrasavellaneda/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://wa.me/5491122334455" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/5491123601134" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
           </div>
@@ -29,10 +29,9 @@ export default function Footer() {
           <h4>Navegación</h4>
           <ul>
             <li><NavLink to="/">Inicio</NavLink></li>
-            <li><NavLink to="/">Empresa</NavLink></li>
-            <li><NavLink to="/">Productos</NavLink></li>
-            <li><NavLink to="/gallery">Galería</NavLink></li>
-            <li><NavLink to="/">Contacto</NavLink></li>
+            <li><NavLink to="/empresa">Empresa</NavLink></li>
+            <li><NavLink to="/materiales">Productos</NavLink></li>
+            <li><NavLink to="/contact">Contacto</NavLink></li>
           </ul>
         </nav>
 
@@ -41,15 +40,21 @@ export default function Footer() {
           <ul className="footer-contact">
             <li>
               <FaEnvelope />
-              <a href="mailto:contacto@papeleravazquez.com">contacto@papeleravazquez.com</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=Fibrasavellaneda@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fibrasavellaneda@gmail.com
+              </a>
             </li>
             <li>
               <FaWhatsapp />
-              <a href="https://wa.me/5491122334455" target="_blank" rel="noopener noreferrer">+54 9 11 2233-4455</a>
+              <a href="https://wa.me/5491123601134" target="_blank" rel="noopener noreferrer">+54 9 11 23601134</a>
             </li>
             <li>
               <FaMapMarkerAlt />
-              <span>Av. Industrial 1234, Buenos Aires</span>
+              <span>Gral. Deheza 684, Buenos Aires</span>
             </li>
           </ul>
         </div>
@@ -59,7 +64,7 @@ export default function Footer() {
           <ul className="footer-hours">
             <li>
               <span>Lunes a viernes</span>
-              <strong>8:00 – 18:00</strong>
+              <strong>8:00 – 19:00</strong>
             </li>
             <li>
               <span>Sábados</span>
@@ -71,10 +76,6 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; {year} Papelera Vazquez. Todos los derechos reservados.</p>
-        <div className="footer-bottom-links">
-          <NavLink to="/">Privacidad</NavLink>
-          <NavLink to="/">Términos</NavLink>
-        </div>
       </div>
     </footer>
   );

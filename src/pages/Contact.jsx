@@ -101,10 +101,12 @@ export default function ContactPage() {
 
                 <div className="contact-cards">
 
+                    {/* DIRECCIÓN */}
+
                     <a
                         href="https://maps.google.com/?q=Grupo+Fibras+Avellaneda+S.A."
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="contact-card"
                     >
 
@@ -123,13 +125,17 @@ export default function ContactPage() {
                         </p>
 
                         <span>
-                            Avellaneda, Buenos Aires
+                            Gral. Deheza 684
                         </span>
 
                     </a>
 
+                    {/* TELÉFONO */}
+
                     <a
-                        href="tel:+541100000000"
+                        href="https://wa.me/5491123601134"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="contact-card"
                     >
 
@@ -144,7 +150,7 @@ export default function ContactPage() {
                         </h3>
 
                         <p>
-                            +54 11 XXXX-XXXX
+                            +54 9 11 2360-1134
                         </p>
 
                         <span>
@@ -153,8 +159,12 @@ export default function ContactPage() {
 
                     </a>
 
+                    {/* EMAIL */}
+
                     <a
-                        href="mailto:contacto@grupofibras.com"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=Fibrasavellaneda@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="contact-card"
                     >
 
@@ -169,7 +179,7 @@ export default function ContactPage() {
                         </h3>
 
                         <p>
-                            contacto@grupofibras.com
+                            Fibrasavellaneda@gmail.com
                         </p>
 
                         <span>
@@ -195,7 +205,7 @@ export default function ContactPage() {
                     <a
                         href="https://maps.google.com/?q=Grupo+Fibras+Avellaneda+S.A."
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="maps-button"
                     >
 

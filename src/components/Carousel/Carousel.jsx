@@ -6,7 +6,7 @@ import "./Carousel.css";
 export default function ProductCarousel({
 
     products,
-    tag = "Nuestros Productos",
+    tag = "Nuestros Servicios",
     title = "Calidad en cada proceso",
 
 }) {

@@ -52,7 +52,7 @@ export default function HeroEmpresa() {
 
                     <h1>
                         Más de
-                        <strong> 40 años </strong>
+                        <strong> 60 años </strong>
                         transformando
                         residuos.
                     </h1>
@@ -114,7 +114,7 @@ export default function HeroEmpresa() {
                     <div className="hero-empresa-footer-item">
 
                         <strong>
-                            40+
+                            60+
                         </strong>
 
                         <span>
