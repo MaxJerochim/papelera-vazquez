@@ -17,6 +17,7 @@ export default function ProductCarousel({
     const [lightboxIndex, setLightboxIndex] = useState(null);
 
     const sectionRef = useRef(null);
+    const touchStartX = useRef(null);
 
     // Responsive: cuántas cards se ven por vez
     useEffect(() => {
@@ -152,7 +153,16 @@ export default function ProductCarousel({
                     ←
                 </button>
 
-                <div className="carousel-viewport">
+                <div
+                    className="carousel-viewport"
+                    onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+                    onTouchEnd={(e) => {
+                        if (touchStartX.current === null) return;
+                        const dx = e.changedTouches[0].clientX - touchStartX.current;
+                        if (Math.abs(dx) > 40) (dx < 0 ? next : prev)();
+                        touchStartX.current = null;
+                    }}
+                >
 
                     <div
                         className="carousel-track"

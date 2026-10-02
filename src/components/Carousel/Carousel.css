@@ -665,25 +665,39 @@
     }
 
 }
-/* Celular: las flechas flotan sobre la foto para que la tarjeta use todo el ancho */
+/* Celular: la tarjeta usa todo el ancho y las flechas van debajo, centradas */
 @media(max-width:700px){
 
     .carousel-wrapper{
-        gap:0;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:22px 16px;
+    }
+
+    .carousel-viewport{
+        order:1;
+        flex:0 0 100%;
     }
 
     .carousel-arrow{
-        position:absolute;
-        top:129px;
-        z-index:3;
+        order:2;
+        position:static;
+        width:46px;
+        height:46px;
+        font-size:1.1rem;
+        box-shadow:0 8px 20px rgba(21,101,255,.22);
     }
 
-    .carousel-arrow.left{
-        left:4px;
+    .carousel-arrow:hover{
+        transform:none;
     }
 
-    .carousel-arrow.right{
-        right:4px;
+    .carousel-dots{
+        margin-top:18px;
+    }
+
+    .carousel-img-wrapper{
+        height:260px;
     }
 
 }
