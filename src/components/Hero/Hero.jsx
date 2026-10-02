@@ -9,7 +9,7 @@ export default function Hero() {
 
       <div className="hero-bg">
         <img
-          src="/images/REDES GFIBRAS2026/127.webp"
+          src="/images/REDES GFIBRAS2026/Foto portada.jpg"
           alt="Gestión de residuos de papel y cartón"
           className="hero-bg-img"
         />
