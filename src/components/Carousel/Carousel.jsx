@@ -183,6 +183,7 @@ export default function ProductCarousel({
                                             src={product.image}
                                             alt={product.description || `Producto ${product.id}`}
                                             loading="lazy"
+                                            decoding="async"
                                         />
 
                                         <div className="carousel-img-overlay">
@@ -260,8 +261,7 @@ export default function ProductCarousel({
 
                         <img
                             src={products[lightboxIndex].image}
-                            alt={products[lightboxIndex].description || `Producto ${products[lightboxIndex].id}`}
-                        />
+                            alt={products[lightboxIndex].description || `Producto ${products[lightboxIndex].id}`} loading="lazy" decoding="async" />
 
                         <p className="lightbox-caption">
                             {products[lightboxIndex].description || "Producto de la empresa"}

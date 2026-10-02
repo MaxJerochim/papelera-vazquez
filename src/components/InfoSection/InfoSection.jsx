@@ -31,8 +31,7 @@ export default function InfoSection({ data }) {
 
                         <img
                             src={data.image}
-                            alt={data.title}
-                        />
+                            alt={data.title} loading="lazy" decoding="async" />
 
                         <div className="image-gradient"></div>
 

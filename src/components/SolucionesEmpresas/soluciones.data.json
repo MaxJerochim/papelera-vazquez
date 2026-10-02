@@ -6,8 +6,8 @@
         "Desde la colocación de canastos y contenedores hasta la recolección, compactación, pesaje y gestión de los materiales, facilitamos el proceso de recuperación para que la sostenibilidad forme parte de tu negocio."
     ],
     "buttons": [
-        { "label": "Conocé nuestras soluciones", "variant": "primary" },
-        { "label": "Consultar por WhatsApp", "variant": "secondary" }
+        { "label": "Conocé nuestras soluciones", "variant": "primary", "to": "/servicios" },
+        { "label": "Consultar por WhatsApp", "variant": "secondary", "whatsapp": true }
     ],
     "features": [
         {

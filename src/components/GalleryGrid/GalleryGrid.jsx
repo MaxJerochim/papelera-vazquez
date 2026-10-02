@@ -25,6 +25,7 @@ export default function GalleryGrid({
                             src={image.image}
                             alt={`Grupo Fibras ${image.id}`}
                             loading="lazy"
+                                            decoding="async"
                             
                         />
 

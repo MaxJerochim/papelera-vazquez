@@ -8,11 +8,11 @@
   "buttons": [
     {
       "label": "CONOCÉ MÁS SOBRE INDUSTRIA PAPELERA",
-      "variant": "primary"
+      "variant": "primary", "to": "/servicios"
     },
     {
       "label": "CONSULTAR POR WHATSAPP",
-      "variant": "secondary"
+      "variant": "secondary", "whatsapp": true
     }
   ],
   "cards": [

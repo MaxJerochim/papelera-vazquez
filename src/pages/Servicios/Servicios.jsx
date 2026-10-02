@@ -70,8 +70,7 @@ export default function Servicios(){
 
                                     <img
                                         src={service.image}
-                                        alt={service.title}
-                                    />
+                                        alt={service.title} loading="lazy" decoding="async" />
 
 
                                 </div>

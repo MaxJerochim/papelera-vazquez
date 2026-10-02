@@ -39,7 +39,7 @@ export default function ServiciosDestacados(){
                         >
 
                             <div className="sd-image">
-                                <img src={item.image} alt={item.title} />
+                                <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
                                 <div className="sd-overlay"></div>
                             </div>
 

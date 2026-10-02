@@ -7,7 +7,7 @@
         "A nivel nacional contamos con la flota y el equipamiento necesario para operar con agilidad, lo que nos permite brindar soluciones a nuestros clientes en el corto plazo."
     ],
     "image": {
-        "src": "/images/REDES GFIBRAS2026/1001.jpg",
+        "src": "/images/fotos/1001.webp",
         "alt": "Grupo Fibras - Historia y trayectoria"
     },
     "stats": [
@@ -16,7 +16,7 @@
         { "value": "3ra GEN.", "label": "DE UNA FAMILIA DE PAPELEROS" }
     ],
     "featuredCard": {
-        "image": "/images/REDES GFIBRAS2026/61.webp",
+        "image": "/images/fotos/61.webp",
         "title": "GRUPO FIBRAS — MÁS DE 60 AÑOS DE HISTORIA",
         "description": "Este proyecto comenzó con nuestro abuelo, con una sola camioneta y muchas ganas de trabajar, cuando todo se hacía a mano. Hoy somos la tercera generación de una familia de papeleros, comprometida con darle una nueva vida útil al material y colaborar con el medio ambiente."
     }

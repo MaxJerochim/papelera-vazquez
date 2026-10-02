@@ -665,3 +665,25 @@
     }
 
 }
+/* Celular: las flechas flotan sobre la foto para que la tarjeta use todo el ancho */
+@media(max-width:700px){
+
+    .carousel-wrapper{
+        gap:0;
+    }
+
+    .carousel-arrow{
+        position:absolute;
+        top:129px;
+        z-index:3;
+    }
+
+    .carousel-arrow.left{
+        left:4px;
+    }
+
+    .carousel-arrow.right{
+        right:4px;
+    }
+
+}

@@ -1,7 +1,16 @@
 import "./MineriaSection.css";
+import { useNavigate } from "react-router-dom";
+import { openWhatsApp } from "../../data/contacto";
 import data from "./mineria.data.json";
 
 export default function MineriaSection(){
+
+    const navigate = useNavigate();
+
+    const handleClick = (btn) => {
+        if (btn.whatsapp) openWhatsApp("Hola! Quiero hacer una consulta sobre sus servicios.");
+        else if (btn.to) navigate(btn.to);
+    };
 
     const { eyebrow, title, paragraphs, buttons, cards } = data;
 
@@ -33,6 +42,7 @@ export default function MineriaSection(){
 
                                 <button
                                     key={i}
+                                    onClick={() => handleClick(btn)}
                                     className={
                                         btn.variant === "primary"
                                             ? "mineria-btn-primary"

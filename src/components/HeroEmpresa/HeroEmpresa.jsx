@@ -11,7 +11,7 @@ export default function HeroEmpresa() {
             <div className="hero-empresa-image">
 
                 <img
-                    src="/images/REDES GFIBRAS2026/Foto portada.jpg"
+                    src="/images/fotos/foto-portada.webp"
                     alt="Grupo Fibras - Industria papelera"
                 />
 

@@ -1,5 +1,6 @@
 import "./Materiales.css";
 import data from "./materiales.data.json";
+import { whatsappLink } from "../../data/contacto";
 
 export default function Materiales() {
 
@@ -17,7 +18,7 @@ export default function Materiales() {
             materialName
         );
 
-        return `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(text)}`;
+        return whatsappLink(text);
 
     };
 

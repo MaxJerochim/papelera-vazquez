@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import "./Navbar.css";
-import logo from "../../assets/157.png";
+import logo from "../../assets/157.webp";
 
 export default function Navbar() {
     const [hidden, setHidden] = useState(false);
@@ -95,7 +95,14 @@ export default function Navbar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    const navigate = useNavigate();
+
     const closeMenu = () => setMenuOpen(false);
+
+    const goToPresupuesto = () => {
+        setMenuOpen(false);
+        navigate("/presupuesto");
+    };
 
     return (
         <header
@@ -146,7 +153,7 @@ export default function Navbar() {
 
                 {/* ==================== PRESUPUESTO (DESKTOP) ==================== */}
 
-                <button className="nav-button">
+                <button className="nav-button" onClick={goToPresupuesto}>
                     Pedir presupuesto
 
                     <span>→</span>
@@ -197,7 +204,7 @@ export default function Navbar() {
 
                 </nav>
 
-                <button className="nav-button mobile-nav-button" onClick={closeMenu}>
+                <button className="nav-button mobile-nav-button" onClick={goToPresupuesto}>
                     Pedir presupuesto
 
                     <span>→</span>

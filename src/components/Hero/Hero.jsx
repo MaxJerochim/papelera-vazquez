@@ -9,9 +9,10 @@ export default function Hero() {
 
       <div className="hero-bg">
         <img
-          src="/images/REDES GFIBRAS2026/Foto portada.jpg"
+          src="/images/fotos/foto-portada.webp"
           alt="Gestión de residuos de papel y cartón"
           className="hero-bg-img"
+          fetchPriority="high"
         />
 
         <div className="hero-overlay"></div>
@@ -32,7 +33,7 @@ export default function Hero() {
         <h1>
           Ofrecemos gestión de{" "}
           <strong>
-            residuos secos
+            residuos secos:
           </strong>{" "}
           papel y cartón
         </h1>
@@ -53,7 +54,10 @@ export default function Hero() {
             <span>→</span>
           </button>
 
-          <button className="secondary-btn">
+          <button
+            className="secondary-btn"
+            onClick={() => navigate("/presupuesto")}
+          >
             Solicitar cotización
           </button>
 

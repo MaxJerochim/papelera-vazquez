@@ -1,15 +1,37 @@
+import { useState } from "react";
 import "./Contact.css";
 
 import {
     FaMapMarkerAlt,
-    FaPhoneAlt,
+    FaWhatsapp,
     FaEnvelope,
     FaArrowRight
 } from "react-icons/fa";
 
+import { EMAIL, PHONE_DISPLAY, openWhatsApp, whatsappLink } from "../data/contacto";
+
 export default function ContactPage() {
 
+    const [form, setForm] = useState({ name: "", company: "", message: "" });
+
+    const handleChange = (e) => {
+        setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const lines = [
+            `Hola! Soy ${form.name.trim()}${form.company.trim() ? ` de ${form.company.trim()}` : ""}.`,
+            "",
+            form.message.trim()
+        ];
+
+        openWhatsApp(lines.join("\n"));
+    };
+
     return (
+        <>
 
         <section className="contact-page">
 
@@ -35,7 +57,7 @@ export default function ContactPage() {
 
                 <div className="contact-form-wrapper">
 
-                    <form className="contact-form">
+                    <form className="contact-form" onSubmit={handleSubmit}>
 
                         <div className="form-group">
 
@@ -45,8 +67,12 @@ export default function ContactPage() {
 
                             <input
                                 id="name"
+                                name="name"
                                 type="text"
                                 placeholder="Tu nombre"
+                                autoComplete="name"
+                                value={form.name}
+                                onChange={handleChange}
                                 required
                             />
 
@@ -54,15 +80,18 @@ export default function ContactPage() {
 
                         <div className="form-group">
 
-                            <label htmlFor="email">
-                                Email
+                            <label htmlFor="company">
+                                Empresa <span className="form-optional">(opcional)</span>
                             </label>
 
                             <input
-                                id="email"
-                                type="email"
-                                placeholder="tu@email.com"
-                                required
+                                id="company"
+                                name="company"
+                                type="text"
+                                placeholder="Nombre de tu empresa"
+                                autoComplete="organization"
+                                value={form.company}
+                                onChange={handleChange}
                             />
 
                         </div>
@@ -75,8 +104,11 @@ export default function ContactPage() {
 
                             <textarea
                                 id="message"
+                                name="message"
                                 rows="7"
                                 placeholder="Escribí tu mensaje..."
+                                value={form.message}
+                                onChange={handleChange}
                                 required
                             />
 
@@ -87,11 +119,15 @@ export default function ContactPage() {
                             className="contact-submit"
                         >
 
-                            Enviar mensaje
+                            <FaWhatsapp />
 
-                            <FaArrowRight />
+                            Enviar por WhatsApp
 
                         </button>
+
+                        <p className="contact-form-note">
+                            Se abrirá WhatsApp con tu mensaje listo para enviar.
+                        </p>
 
                     </form>
 
@@ -133,7 +169,7 @@ export default function ContactPage() {
                     {/* TELÉFONO */}
 
                     <a
-                        href="https://wa.me/5491123601134"
+                        href={whatsappLink()}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"
@@ -141,20 +177,20 @@ export default function ContactPage() {
 
                         <div className="card-icon">
 
-                            <FaPhoneAlt />
+                            <FaWhatsapp />
 
                         </div>
 
                         <h3>
-                            Teléfono
+                            WhatsApp
                         </h3>
 
                         <p>
-                            +54 9 11 2360-1134
+                            {PHONE_DISPLAY}
                         </p>
 
                         <span>
-                            Lunes a Viernes
+                            Lunes a viernes
                         </span>
 
                     </a>
@@ -162,7 +198,7 @@ export default function ContactPage() {
                     {/* EMAIL */}
 
                     <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=Fibrasavellaneda@gmail.com"
+                        href={`mailto:${EMAIL}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"
@@ -179,7 +215,7 @@ export default function ContactPage() {
                         </h3>
 
                         <p>
-                            Fibrasavellaneda@gmail.com
+                            {EMAIL}
                         </p>
 
                         <span>
@@ -220,6 +256,8 @@ export default function ContactPage() {
             </div>
 
         </section>
+
+        </>
 
     );
 

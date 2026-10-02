@@ -24,7 +24,7 @@ export default function NosotrosSection(){
                         <h2>{title}</h2>
 
                         <div className="nosotros-image">
-                            <img src={image.src} alt={image.alt} />
+                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
                         </div>
 
                     </div>
@@ -58,7 +58,7 @@ export default function NosotrosSection(){
                 <div className="nosotros-featured">
 
                     <div className="nosotros-featured-image">
-                        <img src={featuredCard.image} alt={featuredCard.title} />
+                        <img src={featuredCard.image} alt={featuredCard.title} loading="lazy" decoding="async" />
                     </div>
 
                     <div className="nosotros-featured-body">

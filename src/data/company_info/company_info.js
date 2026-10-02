@@ -6,7 +6,7 @@ export const companyInfo = {
 
     title: "¿Quiénes somos?",
 
-    image: "/images/REDES GFIBRAS2026/11.webp",
+    image: "/images/fotos/11.webp",
 
     reverse: false,
 
@@ -39,7 +39,7 @@ export const companyInfo = {
 
     title: "Trayectoria",
 
-    image: "/images/REDES GFIBRAS2026/103.webp",
+    image: "/images/fotos/103.webp",
 
     reverse: true,
 
@@ -72,7 +72,7 @@ export const companyInfo = {
 
     title: "Transformamos residuos en recursos",
 
-    image: "/images/REDES GFIBRAS2026/45.webp",
+    image: "/images/fotos/45.webp",
 
     reverse: false,
 

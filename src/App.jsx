@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Materiales from "./pages/Materiales/Materiales"
 import Servicios from "./pages/Servicios/Servicios"
 import Empresa from "./pages/Empresa"
+import Presupuesto from "./pages/Presupuesto/Presupuesto"
 
 function App() {
 
@@ -42,6 +43,11 @@ function App() {
                     <Route
                         path="/contact"
                         element={<Contact />}
+                    />
+
+                    <Route
+                        path="/presupuesto"
+                        element={<Presupuesto />}
                     />
 
 

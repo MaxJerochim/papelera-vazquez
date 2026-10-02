@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
-import logo from "../../assets/logo_transparente.png";
+import logo from "../../assets/logo_transparente.webp";
 import { FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { EMAIL, PHONE_DISPLAY, ADDRESS, whatsappLink } from "../../data/contacto";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -19,7 +20,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/grupofibrasavellaneda/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://wa.me/5491123601134" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
           </div>
@@ -30,7 +31,9 @@ export default function Footer() {
           <ul>
             <li><NavLink to="/">Inicio</NavLink></li>
             <li><NavLink to="/empresa">Empresa</NavLink></li>
-            <li><NavLink to="/materiales">Productos</NavLink></li>
+            <li><NavLink to="/servicios">Servicios</NavLink></li>
+            <li><NavLink to="/materiales">Materiales</NavLink></li>
+            <li><NavLink to="/presupuesto">Pedir presupuesto</NavLink></li>
             <li><NavLink to="/contact">Contacto</NavLink></li>
           </ul>
         </nav>
@@ -40,21 +43,17 @@ export default function Footer() {
           <ul className="footer-contact">
             <li>
               <FaEnvelope />
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=Fibrasavellaneda@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fibrasavellaneda@gmail.com
+              <a href={`mailto:${EMAIL}`}>
+                {EMAIL}
               </a>
             </li>
             <li>
               <FaWhatsapp />
-              <a href="https://wa.me/5491123601134" target="_blank" rel="noopener noreferrer">+54 9 11 23601134</a>
+              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">{PHONE_DISPLAY}</a>
             </li>
             <li>
               <FaMapMarkerAlt />
-              <span>Gral. Deheza 684, Buenos Aires</span>
+              <span>{ADDRESS}</span>
             </li>
           </ul>
         </div>

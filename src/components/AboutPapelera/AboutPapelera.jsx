@@ -23,7 +23,7 @@ export default function AboutPapelera(){
                         <h2>{heading}</h2>
 
                         <div className="about-image">
-                            <img src={image.src} alt={image.alt} />
+                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
                         </div>
 
                     </div>

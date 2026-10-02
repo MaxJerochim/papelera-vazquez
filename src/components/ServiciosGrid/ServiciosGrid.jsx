@@ -37,7 +37,7 @@ export default function ServiciosGrid(){
                         <div className="servicio-card" key={i}>
 
                             <div className="servicio-image">
-                                <img src={item.image} alt={item.title} />
+                                <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
                             </div>
 
                             <div className="servicio-body">

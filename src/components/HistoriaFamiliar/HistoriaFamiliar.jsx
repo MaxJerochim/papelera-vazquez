@@ -36,7 +36,7 @@ export default function HistoriaFamiliar(){
                     <div className="historia-visual">
 
                         <div className="historia-image">
-                            <img src={image.src} alt={image.alt} />
+                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
                         </div>
 
                         <div className="historia-badge">

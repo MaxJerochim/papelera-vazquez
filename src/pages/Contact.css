@@ -192,15 +192,45 @@
 
 }
 
+.contact-submit{
+
+    background:#1faa59;
+
+}
+
+.contact-submit svg{
+
+    font-size:22px;
+
+}
+
 .contact-submit:hover{
 
-    background:var(--primary-light);
-
-    gap:22px;
+    background:#25c26a;
 
     transform:translateY(-3px);
 
-    box-shadow:0 20px 45px rgba(21,101,255,.28);
+    box-shadow:0 20px 45px rgba(31,170,89,.28);
+
+}
+
+.form-optional{
+
+    color:var(--gray);
+
+    font-weight:500;
+
+}
+
+.contact-form-note{
+
+    margin-top:14px;
+
+    text-align:center;
+
+    color:var(--gray);
+
+    font-size:14px;
 
 }
 
@@ -414,6 +444,16 @@
 
     .contact-cards{
 
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:640px){
+
+    .contact-cards{
+
         grid-template-columns:1fr;
 
     }
@@ -424,7 +464,13 @@
 
     .contact-page{
 
-        padding:90px 6%;
+        padding:130px 6% 90px;
+
+    }
+
+    .contact-header{
+
+        margin-bottom:45px;
 
     }
 

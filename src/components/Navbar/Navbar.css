@@ -438,3 +438,14 @@ MENÚ MOBILE (panel desplegable)
     }
 
 }
+
+/* El botón "Pedir presupuesto" del menú mobile tiene que verse
+   (la regla .nav-button {display:none} de arriba lo ocultaba) */
+@media(max-width:1000px){
+
+    .nav-button.mobile-nav-button{
+        display:flex;
+        margin-top:18px;
+    }
+
+}

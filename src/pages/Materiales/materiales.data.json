@@ -5,11 +5,10 @@
             { "text": "Tu material vale.", "accent": false },
             { "text": "Lo pesamos y lo pagamos.", "accent": true }
         ],
-        "subheading": "Comprás y vendés papel, cartón y otros materiales reciclables directo con nosotros. Elegí tu material y consultá el precio del día por WhatsApp.",
+        "subheading": "Compramos papel, cartón y otros materiales reciclables directo, sin intermediarios. Elegí tu material y consultá el precio del día por WhatsApp.",
         "scrollLabel": "Ver materiales"
     },
     "whatsapp": {
-        "phone": "5491100000000",
         "messageTemplate": "Hola! Quiero consultar el precio de {material}. ¿Me pasan info?"
     },
     "sectionHeader": {
@@ -58,7 +57,7 @@
             "id": "polietileno",
             "name": "Polietileno",
             "image": "/images/materiales/polietileno.webp",
-            "alt": "Polietileno para reciclaje"
+            "alt": "Film y bolsas de polietileno para reciclaje"
         },
         {
             "id": "chatarra",

@@ -1,7 +1,16 @@
 import "./SolucionesEmpresas.css";
+import { useNavigate } from "react-router-dom";
+import { openWhatsApp } from "../../data/contacto";
 import data from "./soluciones.data.json";
 
 export default function SolucionesEmpresas(){
+
+    const navigate = useNavigate();
+
+    const handleClick = (btn) => {
+        if (btn.whatsapp) openWhatsApp("Hola! Quiero hacer una consulta sobre sus servicios.");
+        else if (btn.to) navigate(btn.to);
+    };
 
     const { eyebrow, title, paragraphs, buttons, features } = data;
 
@@ -30,6 +39,7 @@ export default function SolucionesEmpresas(){
 
                             <button
                                 key={i}
+                                onClick={() => handleClick(btn)}
                                 className={
                                     btn.variant === "primary"
                                         ? "sol-btn-primary"
