@@ -1,6 +1,7 @@
 import "./Materiales.css";
 import data from "./materiales.data.json";
 import { whatsappLink } from "../../data/contacto";
+import { responsiveProps, SIZES_CARD } from "../../utils/responsiveImage";
 
 export default function Materiales() {
 
@@ -165,7 +166,7 @@ export default function Materiales() {
                                     <div className="mp-card-image-inner">
 
                                         <img
-                                            src={material.image}
+                                            src={material.image} {...responsiveProps(material.image, SIZES_CARD)}
                                             alt={material.alt}
                                             loading="lazy"
                                             onError={(event) => {

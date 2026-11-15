@@ -1,5 +1,6 @@
 import "./Servicios.css";
 import data from "./servicios.data.json";
+import { responsiveProps, SIZES_CARD } from "../../utils/responsiveImage";
 
 
 export default function Servicios(){
@@ -69,7 +70,7 @@ export default function Servicios(){
 
 
                                     <img
-                                        src={service.image}
+                                        src={service.image} {...responsiveProps(service.image, SIZES_CARD)}
                                         alt={service.title} loading="lazy" decoding="async" />
 
 

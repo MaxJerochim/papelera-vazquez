@@ -1,5 +1,6 @@
 import "./HistoriaFamiliar.css";
 import data from "./historia.data.json";
+import { responsiveProps, SIZES_HALF } from "../../utils/responsiveImage";
 
 export default function HistoriaFamiliar(){
 
@@ -36,7 +37,7 @@ export default function HistoriaFamiliar(){
                     <div className="historia-visual">
 
                         <div className="historia-image">
-                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+                            <img src={image.src} {...responsiveProps(image.src, SIZES_HALF)} alt={image.alt} loading="lazy" decoding="async" />
                         </div>
 
                         <div className="historia-badge">

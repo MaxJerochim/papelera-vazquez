@@ -1,14 +1,16 @@
+import { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import Materiales from "./pages/Materiales/Materiales"
-import Servicios from "./pages/Servicios/Servicios"
-import Empresa from "./pages/Empresa"
-import Presupuesto from "./pages/Presupuesto/Presupuesto"
+
+// El resto de las páginas se descargan recién cuando se visitan
+const Contact = lazy(() => import("./pages/Contact"));
+const Materiales = lazy(() => import("./pages/Materiales/Materiales"));
+const Servicios = lazy(() => import("./pages/Servicios/Servicios"));
+const Empresa = lazy(() => import("./pages/Empresa"));
+const Presupuesto = lazy(() => import("./pages/Presupuesto/Presupuesto"));
 
 function App() {
 
@@ -49,8 +51,6 @@ function App() {
                         path="/presupuesto"
                         element={<Presupuesto />}
                     />
-
-
 
                 </Route>
 

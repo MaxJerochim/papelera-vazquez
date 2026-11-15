@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <img src={logo} alt="Papelera Vazquez" className="footer-logo" />
+          <img src={logo} alt="Grupo Fibras" className="footer-logo" />
           <p>
             Reciclaje y procesamiento de fibras, comprometidos con la
             calidad, la eficiencia y el cuidado del medio ambiente.

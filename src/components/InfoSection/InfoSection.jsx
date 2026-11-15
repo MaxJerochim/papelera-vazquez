@@ -1,4 +1,5 @@
 import "./InfoSection.css";
+import { responsiveProps, SIZES_HALF } from "../../utils/responsiveImage";
 
 export default function InfoSection({ data }) {
 
@@ -30,7 +31,7 @@ export default function InfoSection({ data }) {
                     <div className="image-wrapper">
 
                         <img
-                            src={data.image}
+                            src={data.image} {...responsiveProps(data.image, SIZES_HALF)}
                             alt={data.title} loading="lazy" decoding="async" />
 
                         <div className="image-gradient"></div>
