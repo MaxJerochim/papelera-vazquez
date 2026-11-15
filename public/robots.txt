@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://papelera-vazquez.vercel.app/sitemap.xml

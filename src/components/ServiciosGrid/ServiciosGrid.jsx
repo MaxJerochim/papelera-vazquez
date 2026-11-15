@@ -1,5 +1,6 @@
 import "./ServiciosGrid.css";
 import data from "./servicios.data.json";
+import { responsiveProps, SIZES_CARD } from "../../utils/responsiveImage";
 
 export default function ServiciosGrid(){
 
@@ -37,7 +38,7 @@ export default function ServiciosGrid(){
                         <div className="servicio-card" key={i}>
 
                             <div className="servicio-image">
-                                <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
+                                <img src={item.image} {...responsiveProps(item.image, SIZES_CARD)} alt={item.title} loading="lazy" decoding="async" />
                             </div>
 
                             <div className="servicio-body">

@@ -1,4 +1,5 @@
 import "./HeroEmpresa.css";
+import { responsiveProps, SIZES_FULL } from "../../utils/responsiveImage";
 
 export default function HeroEmpresa() {
     return (
@@ -11,7 +12,7 @@ export default function HeroEmpresa() {
             <div className="hero-empresa-image">
 
                 <img
-                    src="/images/fotos/foto-portada.webp"
+                    src="/images/fotos/foto-portada.webp" {...responsiveProps("/images/fotos/foto-portada.webp", SIZES_FULL)}
                     alt="Grupo Fibras - Industria papelera"
                 />
 

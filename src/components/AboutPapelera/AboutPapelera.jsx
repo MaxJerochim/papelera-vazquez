@@ -1,5 +1,6 @@
 import "./AboutPapelera.css";
 import data from "./about.data.json";
+import { responsiveProps, SIZES_HALF } from "../../utils/responsiveImage";
 
 export default function AboutPapelera(){
 
@@ -23,7 +24,7 @@ export default function AboutPapelera(){
                         <h2>{heading}</h2>
 
                         <div className="about-image">
-                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+                            <img src={image.src} {...responsiveProps(image.src, SIZES_HALF)} alt={image.alt} loading="lazy" decoding="async" />
                         </div>
 
                     </div>

@@ -4,6 +4,7 @@ import { FaTruck, FaWarehouse, FaWhatsapp, FaCheck } from "react-icons/fa";
 import "./Presupuesto.css";
 import materialesData from "../Materiales/materiales.data.json";
 import { ADDRESS, openWhatsApp } from "../../data/contacto";
+import { responsiveProps, SIZES_CARD } from "../../utils/responsiveImage";
 
 const MODALIDADES = [
     {
@@ -192,7 +193,7 @@ export default function Presupuesto() {
                                     >
 
                                         <span className="pp-material-img">
-                                            <img src={mat.image} alt="" loading="lazy" />
+                                            <img src={mat.image} {...responsiveProps(mat.image, SIZES_CARD)} alt="" loading="lazy" />
                                             <span className="pp-material-check">
                                                 <FaCheck />
                                             </span>

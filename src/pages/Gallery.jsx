@@ -5,7 +5,6 @@ import "./Gallery.css";
 import GalleryHeader from "../components/GalleryHeader/GalleryHeader";
 import GalleryGrid from "../components/GalleryGrid/GalleryGrid";
 import Lightbox from "../components/Lightbox/Lightbox";
-import Navbar from "../components/Navbar/Navbar";
 
 import { products_a } from "../data/productos_a/productos_a";
 import { products_b } from "../data/productos_b/productos_b";

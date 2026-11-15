@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 
 import "./Carousel.css";
+import { responsiveProps, SIZES_CARD, SIZES_FULL } from "../../utils/responsiveImage";
 
 export default function ProductCarousel({
 
@@ -11,7 +12,7 @@ export default function ProductCarousel({
 
 }) {
 
-    const [index, setIndex] = useState(0);
+    const [rawIndex, setIndex] = useState(0);
     const [visible, setVisible] = useState(3);
     const [inView, setInView] = useState(false);
     const [lightboxIndex, setLightboxIndex] = useState(null);
@@ -40,20 +41,16 @@ export default function ProductCarousel({
 
     const maxIndex = Math.max(0, products.length - visible);
 
+    // Si cambia "visible" (resize) y el índice queda fuera de rango, se ajusta acá
+    const index = Math.min(rawIndex, maxIndex);
+
     const next = () => {
-        setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+        setIndex((prev) => (Math.min(prev, maxIndex) >= maxIndex ? 0 : prev + 1));
     };
 
     const prev = () => {
-        setIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+        setIndex((prev) => (prev <= 0 ? maxIndex : Math.min(prev, maxIndex) - 1));
     };
-
-    // Reajustar índice si cambia visible (resize) y queda fuera de rango
-    useEffect(() => {
-
-        setIndex((prev) => Math.min(prev, maxIndex));
-
-    }, [maxIndex]);
 
     // Animación de entrada al hacer scroll
     useEffect(() => {
@@ -190,7 +187,7 @@ export default function ProductCarousel({
                                     <div className="carousel-img-wrapper">
 
                                         <img
-                                            src={product.image}
+                                            src={product.image} {...responsiveProps(product.image, SIZES_CARD)}
                                             alt={product.description || `Producto ${product.id}`}
                                             loading="lazy"
                                             decoding="async"
@@ -270,7 +267,7 @@ export default function ProductCarousel({
                     >
 
                         <img
-                            src={products[lightboxIndex].image}
+                            src={products[lightboxIndex].image} {...responsiveProps(products[lightboxIndex].image, SIZES_FULL)}
                             alt={products[lightboxIndex].description || `Producto ${products[lightboxIndex].id}`} loading="lazy" decoding="async" />
 
                         <p className="lightbox-caption">
