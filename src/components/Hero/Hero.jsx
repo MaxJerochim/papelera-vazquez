@@ -1,6 +1,5 @@
 import "./Hero.css";
 import { useNavigate } from "react-router-dom";
-import { responsiveProps, SIZES_FULL } from "../../utils/responsiveImage";
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -10,7 +9,7 @@ export default function Hero() {
 
       <div className="hero-bg">
         <img
-          src="/images/fotos/foto-portada.webp" {...responsiveProps("/images/fotos/foto-portada.webp", SIZES_FULL)}
+          src="/images/fotos/foto-portada.webp"
           alt="Gestión de residuos de papel y cartón"
           className="hero-bg-img"
           fetchPriority="high"
